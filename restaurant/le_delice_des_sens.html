@@ -31,7 +31,7 @@
         <main>
 
             <!-- bandeau -->
-            <article class='bandeau'>
+            <div class='bandeau'>
 
                 <!-- image du restaurant -->
                 <img class='bandeau__image' src='../image/restaurants/le-delice-des-sens900.webp' alt="Le délice des sens">
@@ -43,31 +43,30 @@
                     <h2 class='bandeau__texte__titre'>Le délice des sens</h2>
 
                     <!-- sélection j'aime -->
-                    <input class='bandeau__texte--selection' type='checkbox' name='aime' id='aime_le_delice_des_sens'>
-
+                    <div class='bandeau__texte--selection'>
+                    </div>
                     <!-- animation coeur sur multiples pages, nomage BEM spécial -->
                     <div class='coeur'> 
                         <i class='far fa-heart coeur--vide'></i>
                         <i class="fas fa-heart coeur__filtre coeur__filtre--plein"></i>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <!-- formulaire choix de plats -->
-            <form class='repas'>
+            <!-- choix de plats -->
+            <div class='repas'>
 
                 <!-- titre des entrées -->
                 <h3 class="repas__titre">entrées<span class="repas__titre--barre"></span></h3> 
 
                 <!-- groupe des entrées -->
-                <fieldset class='repas__entrée'>
+                <div class='repas__entrée'>
 
                     <!-- entrée 1 -->
                     <div class='repas__entrée--choix'>
 
                         <!-- sélection choix -->
-                        <input type="checkbox" name='menu_le_delice_des_sens' id='entrée1' class='selection'>
-                        <label for='entrée1' class='assiette assiette--un'>
+                        <div class='selection assiette assiette--un'>
 
                             <!-- description entrée -->
                             <span class='assiette__texte'>
@@ -80,15 +79,14 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
 
                     <!-- entrée 2 -->
                     <div class='repas__entrée--choix'>
 
                         <!-- sélection choix -->
-                        <input type="checkbox" name='menu_le_delice_des_sens' id='entrée2' class='selection'>
-                        <label for='entrée2' class='assiette assiette--deux'>
+                        <div class='selection assiette assiette--deux'>
 
                             <!-- description entrée -->
                             <span class='assiette__texte'>
@@ -101,15 +99,14 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
 
                     <!-- entrée 3 -->
                     <div class='repas__entrée--choix'>
 
                         <!-- sélection choix -->
-                        <input type="checkbox" name='menu_le_delice_des_sens' id='entrée3' class='selection'>
-                        <label for='entrée3' class='assiette assiette--trois'>
+                        <div class='selection assiette assiette--trois'>
 
                             <!-- description entrée -->
                             <span class='assiette__texte'>
@@ -122,23 +119,22 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
 
-                </fieldset>
+                </div>
                 
                 <!-- titre des plats -->
                 <h3 class="repas__titre">plats<span class="repas__titre--barre"></span></h3>
 
                 <!-- groupe des plats -->
-                <fieldset class='repas__plat'>
+                <div class='repas__plat'>
 
                     <!-- plat 1 -->
                     <div class='repas__plat--choix'>
 
                         <!-- sélection choix -->
-                        <input type="checkbox" name='menu_le_delice_des_sens' id='plat1' class='selection'>
-                        <label for='plat1' class='assiette assiette--un'>
+                        <div class='selection assiette assiette--un'>
 
                             <!-- description plat -->
                             <span class='assiette__texte'>
@@ -151,15 +147,14 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
 
                     <!-- plat 2 -->
                     <div class='repas__plat--choix'>
 
                         <!-- sélection choix -->
-                        <input type="checkbox" name='menu_le_delice_des_sens' id='plat2' class='selection'>
-                        <label for='plat2' class='assiette assiette--deux'>
+                        <div class='selection assiette assiette--deux'>
 
                             <!-- description plat -->
                             <span class='assiette__texte'>
@@ -172,15 +167,14 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
 
                     <!-- plat 3 -->
                     <div class='repas__plat--choix'>
 
                         <!-- selection choix -->
-                        <input type="checkbox" name='menu_le_delice_des_sens' id='plat3' class='selection'>
-                        <label for='plat3' class='assiette assiette--trois'>
+                        <div class='selection assiette assiette--trois'>
 
                             <!-- description plat -->
                             <span class='assiette__texte'>
@@ -193,22 +187,21 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
-                </fieldset>
+                </div>
             
                 <!-- titre des desserts -->
                 <h3 class="repas__titre">desserts<span class="repas__titre--barre"></span></h3>
 
                 <!-- groupe des desserts -->
-                <fieldset class='repas__dessert'>
+                <div class='repas__dessert'>
 
                     <!-- dessert 1 -->
                     <div class='repas__dessert--choix'>
 
                         <!-- selection choix -->
-                        <input type="checkbox" name='menu_le_delice_des_sens' id='dessert1' class='selection'>
-                        <label for='dessert1' class='assiette assiette--un'>
+                        <div class='selection assiette assiette--un'>
 
                             <!-- description dessert -->
                             <span class='assiette__texte'>
@@ -221,15 +214,14 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
 
                     <!-- dessert 2 -->
                     <div class='repas__dessert--choix'>
 
-                        <!-- selection choix -->
-                        <input type="checkbox" name='menu_le_delice_des_sens' id='dessert2' class='selection'>
-                        <label for='dessert2' class='assiette assiette--deux'>
+                        <!-- sélection choix -->
+                        <div class='selection assiette assiette--deux'>
 
                             <!-- description dessert -->
                             <span class='assiette__texte'>
@@ -242,15 +234,14 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
  
                     <!-- dessert 3 -->
                     <div class='repas__dessert--choix'>
 
-                        <!-- selection choix -->
-                        <input type="checkbox" name='menu_le_delice_des_sens' id='dessert3' class='selection'>
-                        <label for='dessert3' class='assiette assiette--trois'>
+                        <!-- sélection choix -->
+                        <div class='selection assiette assiette--trois'>
 
                             <!-- description dessert -->
                             <span class='assiette__texte'>
@@ -263,11 +254,11 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
-                </fieldset>
-                <input type='button' class='repas--bouton' value="Commander">
-            </form>
+                </div>
+                <button class='repas--bouton' value="Commander">
+            </div>
         </main>
 
         <!-- pied de page -->
