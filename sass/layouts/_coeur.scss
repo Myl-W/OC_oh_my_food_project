@@ -1,0 +1,36 @@
+@use "../utils/variables" as *;
+@use "../utils/extensions" as *;
+@use "../utils/keyframe" as *;
+
+/* bloc bem coeur réutilisé */
+.coeur{
+     height: 48px;
+     position: absolute;
+     right: 10px;
+     bottom: 20px;
+     &:hover{
+         cursor:pointer;
+     } /* coeur vide */
+     &--vide{
+        padding: 13px;
+         font-size: $size-deux; 
+     } /* zone apparition du coeur plein */
+     &__filtre{
+         position: absolute;
+         right: 0px;
+         top: 0px;
+         /* coeur plein */
+         &--plein{
+            position: absolute;
+            padding: 13px;
+            font-size: $size-deux; 
+            color: transparent;
+            opacity: 0;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            &:hover{
+                animation: heart-in 1s linear forwards;
+            }
+        }
+}
+}

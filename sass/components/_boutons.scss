@@ -1,0 +1,51 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/extensions" as *;
+
+/* bouton moteur de recherche avec activation animation */
+.recherche{
+    &--bouton{
+        height: 50px;
+        width: 220px;
+        display: block;
+        margin: 35px auto;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        color: $couleur-encre-sec; 
+        &:hover{  
+            opacity: 0.9;
+            cursor: pointer;
+            animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+            box-shadow: 0px 5px 10px 0px #8e8e8e; 
+        }
+    }
+}
+
+/* bouton formulaire carte du menu */
+.repas{
+    &--bouton{
+        height: 50px;
+        width: 185px;
+        display: block;
+        margin: 40px auto 70px auto;
+        border: none;
+        border-radius: 25px;
+        font-size: $size-un;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        color: $couleur-encre-sec;
+        &:hover{  
+            opacity: 0.9;
+            cursor: pointer;
+            animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+            box-shadow: 0px 5px 10px 0px #8e8e8e; 
+        }
+    }
+}
+

@@ -1,0 +1,65 @@
+@use "../utils/variables" as *;
+/* footer */
+.pied{
+    height: 203px;
+    margin-top: 30px;
+    color: $couleur-encre-sec;
+    background-color: $couleur-footer;
+    /* titre footer */
+    &__titre{
+        margin: 0;
+        padding: 20px 0 10px 0;
+        font-weight: 400;
+        text-indent: 7%;
+        font-size: 18px;
+        font-family: 'Shrikhand', cursive;
+    } /* ensemble de li */
+    &__liste{
+        max-width: 300px;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 0 0 7%;
+        padding: 0;  
+        @media screen and (min-width: $desktop){
+            max-width: 80%;
+            margin: 20px 0 0 200px;
+        } /* li */
+        &--element{
+            padding: 0;
+            margin: 0 25% 0 0; 
+            list-style-type: none;
+            @media screen and (min-width: $desktop){
+                width: 18%;
+                margin: 0 1% 0 6%;  
+            }
+        }
+    }
+} /* zone cliquable de texte */
+.lien{
+    display: block;
+    margin:0;
+    padding: 5px 0 5px 0;
+    color: $couleur-encre-sec;
+    font-size: 16px; 
+    font-weight: 500;  
+    text-decoration: none;
+    cursor: pointer;
+    &:link{
+        color: $couleur-encre-sec;
+    }
+    &:visited{
+        color: $couleur-encre-sec;
+    }
+    &__icone{
+        width: 18px;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
