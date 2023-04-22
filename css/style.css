@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* selection texte */
+/* sélection texte */
 ::selection {
   background-color: unset;
   color: unset;
@@ -20,36 +20,50 @@ body {
     color: #99E2D0;
   }
 }
-/* box-shadow */
+/* bouton moteur de recherche avec activation animation */
+.recherche--bouton {
+  height: 50px;
+  width: 220px;
+  display: block;
+  margin: 35px auto;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: #FFF;
+}
+.recherche--bouton:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+  box-shadow: 0px 5px 10px 0px #8e8e8e;
+}
+
+/* bouton formulaire carte du menu */
+.repas--bouton {
+  height: 50px;
+  width: 185px;
+  display: block;
+  margin: 40px auto 70px auto;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: #FFF;
+}
+.repas--bouton:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+  box-shadow: 0px 5px 10px 0px #8e8e8e;
+}
+
 /* loader */
-@keyframes projo {
-  0% {
-    transform: translateX(-380px);
-  }
-  50% {
-    transform: translateX(-90px);
-  }
-  55% {
-    transform: translateX(-80px);
-  }
-  75% {
-    transform: translateX(-270px);
-  }
-  80% {
-    transform: translateX(-280px);
-  }
-  90% {
-    transform: translateX(-210px);
-  }
-  100% {
-    transform: translateX(-240px);
-  }
-}
-@keyframes flash {
-  100% {
-    z-index: 2;
-  }
-}
 @keyframes loader {
   99.99% {
     height: 100%;
@@ -163,7 +177,7 @@ body {
     transform: scale3d(0.98, 0.98, 1);
   }
 }
-/* animation fonctionnement */
+/* animation navigation restaurants */
 @keyframes demi-mou {
   0% {
     transform: scale3d(0.97, 0.97, 1);
@@ -179,74 +193,6 @@ body {
   }
   80% {
     transform: scale3d(0.99, 0.99, 1);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-}
-/* animation navigation restaurants */
-@keyframes coup {
-  10% {
-    transform: scale3d(0.975, 0.975, 1);
-  }
-  40% {
-    transform: scale3d(0.975, 0.975, 1);
-  }
-  100% {
-    transform: scale3d(0.99, 0.99, 1);
-  }
-}
-/*animation coeur */
-@keyframes efface {
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes grandi-bat {
-  0% {
-    transform: scale3d(0, 0, 1);
-  }
-  33% {
-    transform: scale3d(1, 1, 1);
-  }
-  38% {
-    transform: scale3d(1, 1, 1);
-  }
-  43% {
-    transform: scale3d(1, 1, 1);
-  }
-  48% {
-    transform: scale3d(1, 1, 1);
-  }
-  53% {
-    transform: scale3d(1.4, 1.4, 1);
-  }
-  58% {
-    transform: scale3d(1.05, 1.05, 1);
-  }
-  63% {
-    transform: scale3d(1.2, 1.2, 1);
-  }
-  68% {
-    transform: scale3d(1, 1, 1);
-  }
-  73% {
-    transform: scale3d(1, 1, 1);
-  }
-  78% {
-    transform: scale3d(1, 1, 1);
-  }
-  83% {
-    transform: scale3d(1.4, 1.4, 1);
-  }
-  88% {
-    transform: scale3d(1.05, 1.05, 1);
-  }
-  95% {
-    transform: scale3d(1.2, 1.2, 1);
   }
   100% {
     transform: scale3d(1, 1, 1);
@@ -277,6 +223,7 @@ body {
     transform: translateY(0px);
   }
 }
+/*animation coeur */
 @keyframes heart-in {
   0% {
     opacity: 0;
@@ -285,52 +232,6 @@ body {
     opacity: 100;
   }
 }
-/* header */
-/* bouton */
-/* formulaire repas */
-/* bouton moteur de recherche avec activation animation */
-.recherche--bouton {
-  height: 50px;
-  width: 220px;
-  display: block;
-  margin: 35px auto;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: 500;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  color: #FFF;
-}
-.recherche--bouton:hover {
-  opacity: 0.9;
-  cursor: pointer;
-  animation: mou 0.6s ease-in-out 0.05s 1 forwards;
-  box-shadow: 0px 5px 10px 0px #8e8e8e;
-}
-
-/* bouton formulaire carte du menu */
-.repas--bouton {
-  height: 50px;
-  width: 185px;
-  display: block;
-  margin: 40px auto 70px auto;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  color: #FFF;
-}
-.repas--bouton:hover {
-  opacity: 0.9;
-  cursor: pointer;
-  animation: mou 0.6s ease-in-out 0.05s 1 forwards;
-  box-shadow: 0px 5px 10px 0px #8e8e8e;
-}
-
 /* header */
 .tête {
   height: 62px;
@@ -365,42 +266,9 @@ body {
   left: 2%;
   color: #000;
   text-decoration: none;
-  /* icone flèche */
-  /* element d'animation fleche */
 }
 .tête__flèche:visited {
   color: #000;
-}
-.tête__flèche--vide {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-size: 21px;
-}
-@media screen and (min-width: 1024px) {
-  .tête__flèche:hover .tête__flèche--vide {
-    opacity: 0;
-    transform: translateX(-25px);
-    transition: all 0.3s;
-  }
-}
-.tête__flèche--plein {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-size: 21px;
-  background: linear-gradient(90deg, #FF79DA 40%, #9356DC 75%);
-  background-repeat: no-repeat;
-  color: transparent;
-  opacity: 0;
-  background-position: left; /* pour version bg-size */
-  transform-origin: 100% 50%; /* pour version scale */
-}
-@media screen and (min-width: 1024px) {
-  .tête__flèche:hover .tête__flèche--plein {
-    opacity: 1;
-    animation: strillé 0.3s linear;
-  }
 }
 
 /* bandeau des pages menu */
@@ -430,7 +298,6 @@ body {
   border-top-right-radius: 40px;
   background-color: #FFFFFF;
   /* nom de la table (restaurant) */
-  /* coeur et effet/animation */
 }
 @media screen and (min-width: 1024px) {
   .bandeau__texte {
@@ -457,33 +324,6 @@ body {
   .bandeau__texte__titre {
     text-align: center;
     text-indent: 0;
-  }
-}
-.bandeau__texte--selection {
-  display: none;
-}
-.bandeau__texte--selection:checked + .coeur .coeur--vide {
-  animation: efface 0.5s linear forwards;
-}
-.bandeau__texte--selection:checked + .coeur .coeur__filtre--plein {
-  opacity: 1;
-}
-.bandeau__texte--selection:checked + .coeur .coeur__filtre--plein {
-  z-index: 1;
-  opacity: 1;
-  animation: grandi-bat 1.8s linear forwards;
-}
-@media screen and (min-width: 1024px) {
-  .bandeau__texte--selection:hover + .coeur .coeur--vide {
-    animation: efface 0.5s linear forwards;
-  }
-  .bandeau__texte--selection:hover + .coeur .coeur__filtre--plein {
-    opacity: 1;
-  }
-  .bandeau__texte--selection:hover + .coeur .coeur__filtre--plein {
-    z-index: 1;
-    opacity: 1;
-    animation: grandi-bat 1.8s linear forwards;
   }
 }
 
@@ -714,7 +554,7 @@ body {
   height: 68px;
   display: flex;
   justify-content: stretch;
-  /* start/center décale la div validé */
+  /* start/center décale la div validée */
   border-radius: 20px;
   box-shadow: 0px 5px 10px 0px #b4b4b4;
   background-color: #FFF;
@@ -876,7 +716,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .carte:hover {
-    animation: coup 2s ease-in 0.05s forwards;
+    animation: demi-mou 1s ease-in 0.05s 1 forwards;
+    cursor: pointer;
   }
 }
 .carte__lien {
@@ -892,7 +733,6 @@ body {
   /* image du restaurant */
   /* nom du restaurant */
   /* lieu du restaurant */
-  /* zone coeur et interaction */
 }
 .carte__lien:link {
   color: #000;
@@ -934,33 +774,6 @@ body {
   text-indent: 4%;
   font-size: 17px;
   font-weight: 300;
-}
-.carte__lien--selection {
-  display: none;
-}
-.carte__lien--selection:checked + .coeur .coeur--vide {
-  animation: efface 0.5s linear forwards;
-}
-.carte__lien--selection:checked + .coeur .coeur__filtre--plein {
-  opacity: 1;
-}
-.carte__lien--selection:checked + .coeur .coeur__filtre--plein {
-  opacity: 1;
-  z-index: 1;
-  animation: grandi-bat 1.8s linear forwards;
-}
-@media screen and (min-width: 1024px) {
-  .carte__lien--selection:hover + .coeur .coeur--vide {
-    animation: efface 0.5s linear forwards;
-  }
-  .carte__lien--selection:hover + .coeur .coeur__filtre--plein {
-    opacity: 1;
-  }
-  .carte__lien--selection:hover + .coeur .coeur__filtre--plein {
-    z-index: 1;
-    opacity: 1;
-    animation: grandi-bat 1.8s linear forwards;
-  }
 }
 @media screen and (min-width: 1024px) {
   .carte:hover .carte__lien--nouveau {
@@ -1118,7 +931,6 @@ body {
   }
 }
 .bouton:hover {
-  animation: demi-mou 1s ease-in 0.05s 1 forwards;
   cursor: pointer;
 }
 .bouton--numero {
@@ -1136,6 +948,14 @@ body {
   margin: 0 7% 0 11%;
   position: relative;
   color: grey;
+  text-indent: 11%;
+  font-size: 16px;
+}
+.bouton--store {
+  width: 14px;
+  margin: 0 7% 0 11%;
+  position: relative;
+  color: #9356DC;
   text-indent: 11%;
   font-size: 16px;
 }
@@ -1284,7 +1104,6 @@ body {
   left: 0px;
   border-radius: 50%;
   transform: translateX(-220px);
-  animation: projo 1.8s linear forwards;
 }
 .conteneur__loader__texte--texte {
   height: 40px;
@@ -1295,7 +1114,6 @@ body {
   z-index: -1;
   font-family: "Shrikhand", cursive;
   font-size: 30px;
-  animation: flash 0.1s linear 2s forwards;
 }
 .conteneur__loader__icone {
   position: absolute;

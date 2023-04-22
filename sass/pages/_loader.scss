@@ -1,5 +1,6 @@
 @use "../utils/variables" as *;
 @use "../utils/keyframe" as *;
+
 /* loader */
 .conteneur{
     position: fixed;
@@ -100,7 +101,6 @@
                 left: 0px;
                 border-radius: 50%;
                 transform: translateX(-220px);
-                animation: projo 1.8s linear forwards;
             }     
             &--texte{
                 height: 40px;
@@ -111,7 +111,6 @@
                 z-index: -1;
                 font-family: 'Shrikhand', cursive;
                 font-size: 30px;
-                animation: flash 0.1s linear 2s forwards; 
             }
         } /* couvert */
         &__icone{

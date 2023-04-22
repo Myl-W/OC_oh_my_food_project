@@ -1,6 +1,5 @@
 @use "../utils/variables" as *;
 @use "../utils/keyframe" as *;
-@use "../utils/mixins" as *;
 
 /* fonctionnement */
 .fonctionnement {
@@ -69,6 +68,15 @@
         margin: 0 7% 0 11%;
         position: relative;
         color: grey;
+        text-indent: 11%;
+        font-size: $size-un;
+    }
+
+    &--store {
+        width: 14px;
+        margin: 0 7% 0 11%;
+        position: relative;
+        color: #9356DC;
         text-indent: 11%;
         font-size: $size-un;
     }

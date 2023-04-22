@@ -1,7 +1,5 @@
 @use "../utils/variables" as *;
-@use "../utils/mixins" as *;
 @use "../utils/keyframe" as *;
-@use "../utils/extensions" as *;
 
 /* header */
 .tête{
@@ -37,37 +35,6 @@
         text-decoration: none;
         &:visited{
             color: $couleur-encre;
-        } /* icone flèche */
-        &--vide{
-            position:absolute;
-            top: 0px;
-            left: 0px;
-            font-size: 21px; 
-        }
-        @media screen and (min-width: $desktop){
-            &:hover .tête__flèche--vide{
-                opacity: 0;
-                transform: translateX(-25px);
-                transition: all 0.3s;
-            }
-        } /* element d'animation fleche */
-        &--plein{
-            position:absolute;
-            top: 0px;
-            left: 0px;
-            font-size: 21px;
-            background: linear-gradient(90deg, $couleur-secondaire 40%, $couleur-primaire 75%);
-            background-repeat: no-repeat;
-            color: transparent;
-            opacity: 0;
-            background-position: left;  /* pour version bg-size */
-            transform-origin: 100% 50%; /* pour version scale */ 
-        }
-        @media screen and (min-width: $desktop){
-            &:hover .tête__flèche--plein {
-                opacity: 1;
-                animation: strillé 0.3s linear;
-            }
         }
     }
 }

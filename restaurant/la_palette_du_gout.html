@@ -23,8 +23,7 @@
 
             <!-- lien retour accueil -->
             <a href="../index.html" class='tête__flèche'>
-                <i class="fas fa-arrow-left tête__flèche--vide"></i>
-                <i class="fas fa-arrow-left tête__flèche--plein"></i>
+                <i class="fas fa-arrow-left"></i>
             </a>   
         </header>
 
@@ -42,9 +41,6 @@
                     <!-- titre nom du restaurant -->
                     <h2 class='bandeau__texte__titre'>La palette du goût</h2>
 
-                    <!-- selection j'aime -->
-                    <div class='bandeau__texte--selection'>
-                    </div>
                     <!-- animation coeur sur multiples pages, nomage BEM spécial -->
                     <div class='coeur'> 
                         <i class='far fa-heart coeur--vide'></i>
@@ -87,8 +83,8 @@
                     <div class='repas__entrée--choix'>
 
                         <!-- sélection choix -->
-                        <input type="checkbox" name='menu_la_palette_du_gout' id='entrée2' class='selection'>
-                        <label for='entrée2' class='assiette assiette--deux'>
+                        <div class='selection'></div>
+                        <div class='assiette assiette--deux'>
 
                             <!-- description entrée -->
                             <span class='assiette__texte'>
@@ -101,15 +97,15 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
 
                     <!-- entrée 3 -->
                     <div class='repas__entrée--choix'>
 
                         <!-- sélection choix -->
-                        <input type="checkbox" name='menu_la_palette_du_gout' id='entrée3' class='selection'>
-                        <label for='entrée3' class='assiette assiette--trois'>
+                        <div class='selection'></div>
+                        <div class='assiette assiette--trois'>
 
                             <!-- description entrée -->
                             <span class='assiette__texte'>
@@ -122,7 +118,7 @@
                             <span class='assiette--valide'>
                                 <i class="fas fa-check-circle assiette--valide--icone"></i>
                             </span>
-                        </label>
+                        </div>
                     </div>
 
                 </div>
@@ -137,7 +133,8 @@
                     <div class='repas__plat--choix'>
 
                         <!-- sélection choix -->
-                        <div class='selection assiette assiette--un'>
+                        <div class='selection'></div>
+                        <div class='assiette assiette--un'>
 
                             <!-- description plat -->
                             <span class='assiette__texte'>
@@ -157,7 +154,8 @@
                     <div class='repas__plat--choix'>
 
                         <!-- sélection choix -->
-                        <div class='selection assiette assiette--deux'>
+                        <div class='selection'></div>
+                        <div class='assiette assiette--deux'>
 
                             <!-- description plat -->
                             <span class='assiette__texte'>
@@ -177,7 +175,8 @@
                     <div class='repas__plat--choix'>
 
                         <!-- sélection choix -->
-                        <div class='selection assiette assiette--trois'>
+                        <div class='selection'></div>
+                        <div class='assiette assiette--trois'>
 
                             <!-- description plat -->
                             <span class='assiette__texte'>
@@ -204,7 +203,8 @@
                     <div class='repas__dessert--choix'>
 
                         <!-- sélection choix -->
-                        <div class='selection assiette assiette--un'>
+                        <div class='selection'></div>
+                        <div class='assiette assiette--un'>
 
                             <!-- description dessert -->
                             <span class='assiette__texte'>
@@ -224,7 +224,8 @@
                     <div class='repas__dessert--choix'>
 
                         <!-- sélection choix -->
-                        <div class='selection assiette assiette--deux'>
+                        <div class='selection'></div>
+                        <div class='assiette assiette--deux'>
 
                             <!-- description dessert -->
                             <span class='assiette__texte'>
@@ -244,7 +245,8 @@
                     <div class='repas__dessert--choix'>
 
                         <!-- selection choix -->
-                        <div for='dessert3' class='selection assiette assiette--trois'>
+                        <div class='selection'></div>
+                        <div class='assiette assiette--trois'>
 
                             <!-- description dessert -->
                             <span class='assiette__texte'>
@@ -260,7 +262,7 @@
                         </div>
                     </div>
                 </div>
-                <button class='repas--bouton' value="Commander">
+                <button class='repas--bouton'>Commander
             </div>
         </main>
 
