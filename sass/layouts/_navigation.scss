@@ -41,7 +41,8 @@
     }
     @media screen and (min-width: $desktop){
         &:hover{
-            animation: coup 2s ease-in 0.05s forwards;
+            animation: demi-mou 1s ease-in 0.05s 1 forwards;
+            cursor: pointer;
         } 
     } /* zone de lien */
     &__lien{

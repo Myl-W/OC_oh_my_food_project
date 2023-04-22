@@ -60,7 +60,7 @@
     100%{transform: scale3d(0.98, 0.98, 1);}  
 }
 
-/* animation fonctionnement */
+/* animation navigation restaurants */
 @keyframes demi-mou{
     0%{transform: scale3d(0.97, 0.97, 1);}
     20%{transform: scale3d(1.02, 1.02, 1);}
@@ -68,13 +68,6 @@
     60%{transform: scale3d(1, 1, 1);}
     80%{transform: scale3d(0.99, 0.99, 1);}
     100%{transform: scale3d(1, 1, 1);}
-}
-
-/* animation navigation restaurants */
-@keyframes coup{
-    10%{transform:scale3d(0.975, 0.975, 1);}
-    40%{transform:scale3d(0.975, 0.975, 1);}
-    100%{transform:scale3d(0.99, 0.99, 1);}
 }
 
 /*animation coeur */
