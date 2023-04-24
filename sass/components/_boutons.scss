@@ -9,10 +9,10 @@
         margin: 35px auto;
         border: none;
         border-radius: 25px;
-        font-size: 16px;
+        font-size: $size-seize;
         font-weight: 500;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background: linear-gradient(193.33deg, $couleur-violet -11.44%, $couleur-rose 123.93%);
         color: $couleur-encre-sec; 
         &:hover{  
             opacity: 0.9;
@@ -32,11 +32,10 @@
         margin: 40px auto 70px auto;
         border: none;
         border-radius: 25px;
-        font-size: $size-un;
         font-weight: 400;
         font-family: 'Roboto', sans-serif;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background: linear-gradient(193.33deg, $couleur-violet -11.44%, $couleur-rose 123.93%);
         color: $couleur-encre-sec;
         &:hover{  
             opacity: 0.9;

@@ -3,27 +3,16 @@
 
 /* header */
 .tête{
-    height: 62px;
+    margin-bottom: 3%;
     position: relative;
-    background: $coul-bg;
+    background: $coul-bg-blanc;
     text-align: center;
+
     &__logo{
         margin: 0;
-        /* logo index*/
-        &__image{
-            width: 158px;
-            padding-top: 18px;
+        padding-top: 5%;
         }
-    }
-    /* nom du site */
-    &__titre{
-        width: 200px;
-        padding: 10px 0;
-        margin: 0 auto;
-        font-size: 29px;
-        font-weight: 400;
-        font-family: 'Shrikhand', cursive;
-    } /* zone flèche */
+
     &__flèche{
         width: 18px;
         height: 20px;

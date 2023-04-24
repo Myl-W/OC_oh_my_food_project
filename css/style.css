@@ -32,7 +32,7 @@ body {
   font-weight: 500;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  color: #FFF;
+  color: #FFFFFF;
 }
 .recherche--bouton:hover {
   opacity: 0.9;
@@ -49,12 +49,11 @@ body {
   margin: 40px auto 70px auto;
   border: none;
   border-radius: 25px;
-  font-size: 16px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  color: #FFF;
+  color: #FFFFFF;
 }
 .repas--bouton:hover {
   opacity: 0.9;
@@ -234,28 +233,14 @@ body {
 }
 /* header */
 .tête {
-  height: 62px;
+  margin-bottom: 3%;
   position: relative;
-  background: #FFF;
+  background: #FFFFFF;
   text-align: center;
-  /* nom du site */
-  /* zone flèche */
 }
 .tête__logo {
   margin: 0;
-  /* logo index*/
-}
-.tête__logo__image {
-  width: 158px;
-  padding-top: 18px;
-}
-.tête__titre {
-  width: 200px;
-  padding: 10px 0;
-  margin: 0 auto;
-  font-size: 29px;
-  font-weight: 400;
-  font-family: "Shrikhand", cursive;
+  padding-top: 5%;
 }
 .tête__flèche {
   width: 18px;
@@ -274,7 +259,7 @@ body {
 /* bandeau des pages menu */
 .bandeau {
   position: relative;
-  /* zone en dessous de l'image */
+  /* zone en-dessous de l'image */
 }
 .bandeau__image {
   width: 100%;
@@ -296,7 +281,7 @@ body {
   bottom: -46px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  background-color: #FFFFFF;
+  background-color: #F7F7F7;
   /* nom de la table (restaurant) */
 }
 @media screen and (min-width: 1024px) {
@@ -334,7 +319,7 @@ body {
   position: relative;
   margin: 0px auto;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #F7F7F7;
   /* titre du formulaire */
   /* texte pub formulaire */
 }
@@ -347,28 +332,27 @@ body {
   margin-left: 10px;
   font-size: 16px;
   font-weight: 600;
-  background-color: #EAEAEA;
   text-align: center;
 }
 .recherche--zone:focus {
-  background-color: #FF79DA;
   opacity: 0;
 }
 .recherche__titre {
   margin: 20px 15% 0 15%;
+  font-size: 24px;
 }
 .recherche__texte {
-  margin: 10px 10% 0 10%;
-  font-size: 17px;
+  margin: 2% 6% 0 6%;
+  font-size: 18px;
   font-weight: 300;
 }
 
 .local {
   display: flex;
   justify-content: center;
-  padding: 20px 16px;
+  padding: 4% 0% 4% 0%;
   background-color: #EAEAEA;
-  font-size: 20px;
+  font-size: 16px;
   position: relative;
   width: 100%;
 }
@@ -377,7 +361,7 @@ body {
 .repas {
   margin: 25px 0 0 0;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #F7F7F7;
   animation: flou 2s linear 0s forwards;
   /* zone des entrées */
   /* zone des plats */
@@ -413,14 +397,14 @@ body {
   }
 }
 .repas__entrée--choix {
-  width: 93vw;
-  height: 68px;
+  width: 90%;
+  height: 69px;
   display: flex;
   transform: translateY(10px);
 }
 @media screen and (min-width: 1024px) {
   .repas__entrée--choix {
-    width: 30vw;
+    width: 50%;
   }
 }
 .repas__entrée--choix:nth-child(1) {
@@ -454,14 +438,14 @@ body {
   }
 }
 .repas__plat--choix {
-  width: 93vw;
+  width: 90%;
   height: 68px;
   display: flex;
   transform: translateY(10px);
 }
 @media screen and (min-width: 1024px) {
   .repas__plat--choix {
-    width: 30vw;
+    width: 50%;
   }
 }
 .repas__plat--choix:nth-child(1) {
@@ -537,7 +521,7 @@ body {
   height: 2.5px;
   display: block;
   margin-top: 5px;
-  background-color: #99E2D0;
+  background-color: #F7F7F7;
   transform-origin: 0% 50%;
   transform: scaleX(0.5);
 }
@@ -550,14 +534,14 @@ body {
 
 /* zone chaque assiette */
 .assiette {
-  width: 93vw;
+  width: 90%;
   height: 68px;
   display: flex;
   justify-content: stretch;
   /* start/center décale la div validée */
   border-radius: 20px;
   box-shadow: 0px 5px 10px 0px #b4b4b4;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   overflow: hidden;
   /* nom de l'assiette */
   /* prix de l'assiette */
@@ -588,28 +572,33 @@ body {
   flex: 1;
   /* texte accompagnant du menu */
 }
+.assiette__texte__titre {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 24px;
+  font-size: 18px;
+  margin: 12px 0 0 0;
+  font-weight: 500;
+}
 .assiette__texte__menu {
   width: 100%;
   display: block;
   margin: -10px 0 0 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-.assiette__texte__menu:first-of-type {
-  height: 24px;
-  margin: 12px 0 0 0;
-  font-size: 17px;
-  font-weight: 500;
 }
 .assiette__prix {
   height: 32px;
   width: 45px;
   padding-left: 0px;
   margin: 36px 3px 0 3px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   text-align: center;
   transition: all 0.4s linear;
@@ -624,7 +613,7 @@ body {
   position: relative;
   left: 1px;
   /* évite un escalier de l'animation */
-  background-color: #c1ede2;
+  background-color: #99E2D0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   transform-origin: 100% 50%;
@@ -635,7 +624,7 @@ body {
   left: 20px;
   margin: 24px 0 24px 0;
   font-size: 20px;
-  color: #FFF;
+  color: #FFFFFF;
 }
 .assiette:hover > .assiette--valide {
   min-width: 60px;
@@ -669,7 +658,7 @@ body {
 /* navigation restaurants */
 .restaurants {
   height: 1190px;
-  background-color: #FFFFFF;
+  background-color: #F7F7F7;
   /* titre de la zone de navigation des restaurants */
   /* élément de navigation */
 }
@@ -705,7 +694,7 @@ body {
   position: relative;
   border-radius: 20px;
   color: #000;
-  background: #FFF;
+  background: #FFFFFF;
   box-shadow: 0px 5px 10px 0px #b4b4b4;
   /* zone de lien */
 }
@@ -727,7 +716,7 @@ body {
   left: 0;
   right: 0;
   border-radius: 20px;
-  background: #FFF;
+  background: #FFFFFF;
   text-decoration: none;
   /* pancarte de nouveauté */
   /* image du restaurant */
@@ -750,9 +739,9 @@ body {
   border-radius: 2px;
   background-color: #99E2D0;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  color: #278870;
+  color: #008766;
 }
 .carte__lien__image {
   height: 175px;
@@ -766,7 +755,7 @@ body {
   padding: 13px 0 0 0;
   font-size: 18px;
   text-indent: 4%;
-  font-weight: 600;
+  font-weight: 700;
 }
 .carte__lien__texte {
   margin: 0;
@@ -783,19 +772,12 @@ body {
 
 /* bloc bem coeur réutilisé */
 .coeur {
-  height: 48px;
   position: absolute;
-  right: 10px;
+  right: 30px;
   bottom: 20px;
-  /* coeur vide */
-  /* zone apparition du coeur plein */
 }
 .coeur:hover {
   cursor: pointer;
-}
-.coeur--vide {
-  padding: 13px;
-  font-size: 24px;
 }
 .coeur__filtre {
   position: absolute;
@@ -805,8 +787,6 @@ body {
 }
 .coeur__filtre--plein {
   position: absolute;
-  padding: 13px;
-  font-size: 24px;
   color: transparent;
   opacity: 0;
   -webkit-background-clip: text;
@@ -820,7 +800,7 @@ body {
 .pied {
   height: 203px;
   margin-top: 30px;
-  color: #FFF;
+  color: #FFFFFF;
   background-color: #353535;
   /* titre footer */
   /* ensemble de li */
@@ -839,6 +819,7 @@ body {
   flex-flow: row wrap;
   margin: 0 0 0 7%;
   padding: 0;
+  font-size: 16px;
   /* li */
 }
 @media screen and (min-width: 1024px) {
@@ -864,17 +845,17 @@ body {
   display: block;
   margin: 0;
   padding: 5px 0 5px 0;
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
 }
 .lien:link {
-  color: #FFF;
+  color: #FFFFFF;
 }
 .lien:visited {
-  color: #FFF;
+  color: #FFFFFF;
 }
 .lien__icone {
   width: 18px;
@@ -885,7 +866,7 @@ body {
 /* fonctionnement */
 .fonctionnement {
   height: 440px;
-  background: #FFF;
+  background: #FFFFFF;
   /* titre de fonctionnement */
   /* zone des 'boutons' */
 }
@@ -907,15 +888,15 @@ body {
 
 /* boutons */
 .bouton {
-  width: 87%;
-  height: 75px;
+  width: 84%;
+  height: 73px;
   position: relative;
   margin: 10px auto;
   padding: 0;
   border: none;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  background-color: #FFFFFF;
+  background-color: #F7F7F7;
   font-size: 16px;
   font-weight: 500;
   text-align: start;
@@ -941,13 +922,13 @@ body {
   background-color: #9356DC;
   border: 1px solid #9356DC;
   border-radius: 22px;
-  color: #FFF;
+  color: #FFFFFF;
 }
 .bouton--noir {
   width: 14px;
   margin: 0 7% 0 11%;
   position: relative;
-  color: grey;
+  color: #7E7E7E;
   text-indent: 11%;
   font-size: 16px;
 }
@@ -957,10 +938,7 @@ body {
   position: relative;
   color: #9356DC;
   text-indent: 11%;
-  font-size: 16px;
-}
-.bouton:hover .bouton--noir {
-  opacity: 0;
+  font-size: 18px;
 }
 .bouton--violet {
   width: 14px;
@@ -971,13 +949,11 @@ body {
   margin: 0 7% 0 11%;
   color: #9356DC;
   text-indent: 11%;
-  font-size: 16px;
-}
-.bouton:hover .bouton--violet {
-  z-index: 1;
+  font-size: 15px;
 }
 .bouton--tel {
-  font-size: 18px;
+  width: 13px;
+  height: 19px;
 }
 .bouton::after {
   content: "";
@@ -1008,7 +984,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  background: white;
+  background: #FFFFFF;
   animation: loader 2.8s linear forwards;
 }
 .conteneur__loader {
@@ -1052,7 +1028,7 @@ body {
   bottom: 10px;
   left: 10px;
   right: 10px;
-  background: white;
+  background: #FFFFFF;
   filter: blur(10px);
 }
 .conteneur__loader--filtre:nth-child(6) {

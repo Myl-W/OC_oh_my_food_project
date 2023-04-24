@@ -4,7 +4,7 @@
 /* navigation restaurants */
 .restaurants{
     height: 1190px;
-    background-color: $couleur-bg;
+    background-color: $couleur-bg-bandeau;
     @media screen and (min-width: $desktop){
         height: 700px;
     } /* titre de la zone de navigation des restaurants */
@@ -13,7 +13,7 @@
         margin: 0;
         padding: 55px 0 20px 0;
         text-indent: 6%;
-        font-size: 24px;  
+        font-size: $size-vingt-quatre;  
     } /* élément de navigation */
     &__navigation{
         height: 1070px;
@@ -33,7 +33,7 @@
     position: relative;
     border-radius: 20px;
     color: #000;
-    background: $coul-bg;
+    background: $coul-bg-blanc;
     box-shadow: 0px 5px 10px 0px #b4b4b4;
     @media screen and (min-width: $desktop){
         width: 45%;
@@ -51,7 +51,7 @@
         left: 0;
         right: 0;
         border-radius: 20px;
-        background: $coul-bg;
+        background: $coul-bg-blanc;
         text-decoration: none;
         &:link{
             color: $couleur-encre;
@@ -67,11 +67,11 @@
             padding:6px 0;
             transform-origin: 10% 50%;
             border-radius: 2px;
-            background-color: $couleur-tertiaire;
+            background-color: $couleur-vert-clair;
             text-align: center;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 500;
-            color: #278870;;
+            color: $couleur-vert-fonce;
         } /* image du restaurant */
         &__image{
             height: 175px;
@@ -83,18 +83,17 @@
         &__titre{
             margin: 0;
             padding: 13px 0 0 0;
-            font-size: $size-trois;
+            font-size: $size-dix-huit;
             text-indent: 4%;
-            font-weight: 600;
+            font-weight: 700;
         } /* lieu du restaurant */
         &__texte{
             margin: 0;
             padding: 5px 0 0 0;
             text-indent: 4%;
-            font-size: 17px;
+            font-size: $size-dix-sept;
             font-weight: 300;
         }
-        
     }
     @media screen and (min-width: $desktop){
         &:hover .carte__lien--nouveau{

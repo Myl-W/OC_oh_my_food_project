@@ -4,7 +4,7 @@ body{
     padding:0;
     margin:0;  
     box-sizing: border-box;
-    background-color: $couleur-bg;
+    background-color: $coul-bg-blanc;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -16,7 +16,7 @@ body{
 
 @media screen and (min-width: $desktop){
     ::selection{
-        background-color: $couleur-secondaire;
-        color: $couleur-tertiaire;
+        background-color: $couleur-rose;
+        color: $couleur-vert-clair;
     }
 }

@@ -8,7 +8,7 @@
     position: relative;
     margin: 0px auto;
     text-align: center;
-    background-color: $couleur-bg;
+    background-color: $couleur-bg-bandeau;
 
     @media screen and (min-width: 620px) {
         height: 280px;
@@ -16,13 +16,10 @@
 
     &--zone {
         margin-left: 10px;
-        font-size: 16px;
+        font-size: $size-seize;
         font-weight: 600;
-        background-color: #EAEAEA;
         text-align: center;
-
         &:focus {
-            background-color: $couleur-secondaire;
             opacity: 0;
         }
     }
@@ -30,12 +27,13 @@
     /* titre du formulaire */
     &__titre {
         margin: 20px 15% 0 15%;
+        font-size: $size-vingt-quatre;
     }
 
     /* texte pub formulaire */
     &__texte {
-        margin: 10px 10% 0 10%;
-        font-size: 17px;
+        margin: 2% 6% 0 6%;
+        font-size: $size-dix-huit;
         font-weight: 300;
     }
 }
@@ -43,9 +41,9 @@
 .local {
     display: flex;
     justify-content: center;
-    padding: 20px 16px;
-    background-color: #EAEAEA;
-    font-size: 20px;
+    padding: 4% 0% 4% 0%;
+    background-color: $couleur-bg-local;
+    font-size: $size-seize;
     position: relative;
     width: 100%;
 }
@@ -54,7 +52,7 @@
 .repas {
     margin: 25px 0 0 0;
     padding: 0;
-    background-color: $couleur-bg;
+    background-color: $couleur-bg-bandeau;
     animation: flou 2s linear 0s forwards;
 
     /* zone des entrées */
@@ -86,13 +84,13 @@
 
         /* type d'entrée */
         &--choix {
-            width: 93vw;
-            height: 68px;
+            width: 90%;
+            height: 69px;
             display: flex;
             transform: translateY(10px);
 
             @media screen and (min-width: $desktop) {
-                width: 30vw;
+                width: 50%;
             }
 
             &:nth-child(1) {
@@ -132,13 +130,13 @@
 
         /* type de plat */
         &--choix {
-            width: 93vw;
+            width: 90%;
             height: 68px;
             display: flex;
             transform: translateY(10px);
 
             @media screen and (min-width: $desktop) {
-                width: 30vw;
+                width: 50%;
             }
 
             &:nth-child(1) {
@@ -206,7 +204,7 @@
         left: 5%;
         margin: 0;
         padding: 40px 0 0 0;
-        font-size: 16px;
+        font-size: $size-seize;
         font-weight: 400;
         text-transform: uppercase;
 
@@ -223,7 +221,7 @@
             height: 2.5px;
             display: block;
             margin-top: 5px;
-            background-color: $couleur-tertiaire;
+            background-color: $couleur-bg-bandeau;
             transform-origin: 0% 50%;
             transform: scaleX(0.5);
 
@@ -237,14 +235,14 @@
 
 /* zone chaque assiette */
 .assiette {
-    width: 93vw;
+    width: 90%;
     height: 68px;
     display: flex;
     justify-content: stretch;
     /* start/center décale la div validée */
     border-radius: 20px;
     box-shadow: 0px 5px 10px 0px #b4b4b4;
-    background-color: $coul-bg;
+    background-color: $coul-bg-blanc;
     overflow: hidden;
 
     &--un {
@@ -277,24 +275,29 @@
         flex: 1;
 
         /* texte accompagnant du menu */
+        &__titre {
+            width: 100%;
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            height: 24px;
+            font-size: $size-dix-huit;
+            margin: 12px 0 0 0;
+            font-weight: 500;
+            }
+
         &__menu {
             width: 100%;
             display: block;
             margin: -10px 0 0 0;
-            font-size: 14px;
+            font-size: $size-quinze;
             font-weight: 300;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-
-            &:first-of-type {
-                height: 24px;
-                margin: 12px 0 0 0;
-                font-size: 17px;
-                font-weight: 500;
             }
         }
-    }
 
     /* prix de l'assiette */
     &__prix {
@@ -302,7 +305,7 @@
         width: 45px;
         padding-left: 0px;
         margin: 36px 3px 0 3px;
-        font-size: 14px;
+        font-size: $size-quinze;
         font-weight: 500;
         text-align: center;
         transition: all 0.4s linear;
@@ -319,7 +322,7 @@
         position: relative;
         left: 1px;
         /* évite un escalier de l'animation */
-        background-color: #c1ede2;
+        background-color: $couleur-vert-clair;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         transform-origin: 100% 50%;
@@ -346,24 +349,24 @@
     @media screen and (max-width: 1023px) {
         &:hover+.assiette .assiette--valide {
             min-width: 60px;
-            background-color: #99E2D0;
+            background-color: $couleur-vert-clair;
         }
 
         &:checked+.assiette .assiette--valide {
             min-width: 60px;
-            background-color: #99E2D0;
+            background-color: $couleur-vert-clair;
         }
 
         &:not(:checked)+.assiette .assiette--valide {
             min-width: 0px;
-            background-color: #99E2D0;
+            background-color: $couleur-vert-clair;
         }
     }
 
     @media screen and (min-width: $desktop) {
         &:checked+.assiette .assiette--valide {
             min-width: 60px;
-            background-color: #99E2D0;
+            background-color: $couleur-vert-clair;
         }
     }
 }

@@ -12,14 +12,14 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    background: white;
+    background: $coul-bg-blanc;
     animation: loader 2.8s linear forwards;   
     &__loader{
         width: 230px;
         height: 230px;
         position: relative;
         border-radius: 50%;
-        background: linear-gradient($couleur-primaire, $couleur-tertiaire, $couleur-secondaire); 
+        background: linear-gradient($couleur-violet, $couleur-vert-clair, $couleur-rose); 
         animation: disparait 0.5s ease-in-out forwards 2.3s; 
             /* couches de blur */
         &--filtre{   
@@ -28,7 +28,7 @@
             position: absolute;
             z-index: 2;
             border-radius: 50%;
-            background: linear-gradient(135deg, $couleur-primaire, $couleur-tertiaire, $couleur-secondaire);
+            background: linear-gradient(135deg, $couleur-violet, $couleur-vert-clair, $couleur-rose);
             animation: animate 1.5s linear 2;
             &:nth-child(1){
                 filter: blur(0px);
@@ -49,7 +49,7 @@
                 bottom: 10px;
                 left: 10px;
                 right: 10px;
-                background: white;
+                background: $coul-bg-blanc;
                 filter: blur(10px);  
             }
             &:nth-child(6){
@@ -65,17 +65,17 @@
                 &:nth-child(1){
                     top: 175px;
                     right: 16px;
-                    background: radial-gradient($couleur-primaire 50%, $couleur-load 0%);
+                    background: radial-gradient($couleur-violet 50%, $couleur-load 0%);
                 }
                 &:nth-child(2){
                     left: 115px;
                     bottom: 227px;
-                    background: radial-gradient($couleur-tertiaire 50%, $couleur-load 0%);
+                    background: radial-gradient($couleur-vert-clair 50%, $couleur-load 0%);
                 }
                 &:nth-child(3){
                     top: 175px;
                     left: 16px;
-                    background: radial-gradient($couleur-secondaire 50%, $couleur-load 0%);
+                    background: radial-gradient($couleur-rose 50%, $couleur-load 0%);
                 }
             }
         } /* ohmyfood */
@@ -128,7 +128,7 @@
                 top: 34px;
                 left: 0px;
                 border-radius: 50%;;
-                background: $couleur-primaire;
+                background: $couleur-violet;
                 filter: blur(15px);
                 transform: scale3d(1, 0.3, 1); 
             }
@@ -154,23 +154,23 @@
     filter: blur(2px);
     transform: scale(0.1);
     &:nth-child(1){  
-        background: radial-gradient($couleur-primaire 50%, $couleur-load 0%);
+        background: radial-gradient($couleur-violet 50%, $couleur-load 0%);
         animation: point 0.8s linear 0s 3;  
     }
     &:nth-child(2){
-        background: radial-gradient($couleur-tertiaire 50%, $couleur-load 0%);
+        background: radial-gradient($couleur-vert-clair 50%, $couleur-load 0%);
         animation: point 0.8s linear 0.1s 3;  
     }
     &:nth-child(3){
-        background: radial-gradient($couleur-secondaire 50%, $couleur-load 0%);
+        background: radial-gradient($couleur-rose 50%, $couleur-load 0%);
         animation: point 0.8s linear 0.2s 3;  
     }
     &:nth-child(4){
-        background: radial-gradient($couleur-tertiaire 50%, $couleur-load 0%);
+        background: radial-gradient($couleur-vert-clair 50%, $couleur-load 0%);
         animation: point 0.8s linear 0.3s 3;  
     }
     &:nth-child(5){
-        background: radial-gradient($couleur-primaire 50%, $couleur-load 0%);
+        background: radial-gradient($couleur-violet 50%, $couleur-load 0%);
         animation: point 0.8s linear 0.4s 3;  
     }
 } 
