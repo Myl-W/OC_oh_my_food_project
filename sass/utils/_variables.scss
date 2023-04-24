@@ -1,29 +1,31 @@
 // couleurs
-$couleur-primaire: #9356DC;
-$couleur-secondaire: #FF79DA;
-$couleur-tertiaire: #99E2D0;
+$couleur-violet: #9356DC;
+$couleur-rose: #FF79DA;
+$couleur-vert-clair: #99E2D0;
+$couleur-vert-fonce:#008766;
+$couleur-grey: #7E7E7E;
 
 // couleur additionnelle bouton loadeur
 $couleur-load: #FFF;
 
 // couleur background
-$couleur-bg: #FFFFFF;
-$coul-bg: #FFF;
+$couleur-bg-local:#EAEAEA;
+$couleur-bg-bandeau: #F7F7F7;
+$coul-bg-blanc: #FFFFFF;
 
 // couleur background footer
 $couleur-footer: #353535;
 
 // couleur police
 $couleur-encre: #000;
-$couleur-encre-sec: #FFF;
-
-// couleur box-shadow
-$ombre: #b4b4b4;
+$couleur-encre-sec: #FFFFFF;
 
 // taille police
-$size-un: 16px;
-$size-deux: 24px;
-$size-trois: 18px;
+$size-quinze: 15px;
+$size-seize: 16px;
+$size-dix-sept: 17px;
+$size-dix-huit: 18px;
+$size-vingt-quatre: 24px;
 
 // media
 $tablet-iphone: 768px;
