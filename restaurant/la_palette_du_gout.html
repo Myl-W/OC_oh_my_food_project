@@ -15,288 +15,270 @@
 
     <body>  
         
-        <!-- tête de page -->
-        <header class='tête'>
+        <!-- head de page -->
+        <header class='head'>
 
-            <!-- titre header -->
-            <p class='tête__logo'></p><img src='../image/logo/ohmyfood.png' alt='logo ohmyfood'>
+            <!-- title header -->
+            <img class='head__logo'src='../image/logo/ohmyfood.png' alt='logo ohmyfood'>
 
-            <!-- lien retour accueil -->
-            <a href="../index.html" class='tête__flèche'>
+            <!-- link retour accueil -->
+            <a href="../index.html" class='head__arrow'>
                 <i class="fas fa-arrow-left"></i>
             </a>   
         </header>
 
         <main>
 
-            <!-- bandeau -->
-            <div class='bandeau'>
+            <!-- banner -->
+            <div class='banner'>
 
                 <!-- image du restaurant -->
-                <img class='bandeau__image' src='../image/restaurants/la-palette-du-gout900.webp' alt='La palette du goût'>
+                <img class='banner__image' src='../image/restaurants/la-palette-du-gout900.webp' alt='La palette du goût'>
                 
                 <!-- zone de présentation du restaurant -->
-                <div class='bandeau__texte'> 
+                <div class='banner__text'> 
 
-                    <!-- titre nom du restaurant -->
-                    <h2 class='bandeau__texte__titre'>La palette du goût</h2>
+                    <!-- title nom du restaurant -->
+                    <h2 class='banner__text__title'>La palette du goût</h2>
 
-                    <!-- animation coeur sur multiples pages, nomage BEM spécial -->
-                    <div class='coeur'> 
-                        <i class='far fa-heart'></i>
-                        <i class="fas fa-heart coeur__filtre coeur__filtre--plein"></i>
+                    <!-- animation heart-->
+                    <div class='heartBanner'> 
+                        <i class='far fa-heart heartBanner__filter'></i>
+                        <i class="fas fa-heart heartBanner__filter heartBanner__filter--full"></i>
                     </div>
                 </div>
             </div>
 
-            <!-- choix de plats -->
-            <div class='repas'>
+            <!-- choice de plats -->
+            <div class='meal'>
 
-                <!-- titre des entrées -->
-                <h3 class="repas__titre">entrées <span class="repas__titre--barre"></span></h3> 
+                <!-- title des starters -->
+                <h3 class="meal__title">Entrées<span class="meal__title--bar"></span></h3> 
 
-                <!-- groupe des entrées -->
-                <div class='repas__entrée'>
+                <!-- groupe des starters -->
+                <div class='meal__starter'>
 
-                    <!-- entrée 1 -->
-                    <div class='repas__entrée--choix'>
+                    <!-- starter 1 -->
+                    <div class='meal__starter--choice'>
 
-                        <!-- sélection choix -->
-                        <input type="checkbox" name='menu_la_palette_du_gout' id='entrée1' class='selection'>
-                        <label for='entrée1' class='assiette assiette--un'>
+                        <div class='plate'>
 
-                            <!-- description entrée -->
-                            <span class='assiette__texte'>
-                                <span class='assiette__texte__titre' title="Fricassée d'escargot">Fricassée d'escargot</span>
-                                <span class='assiette__texte__menu' title="Au piment d'Espelette">Au piment d'Espelette</span>
+                            <!-- description starter -->
+                            <span class='plate__text'>
+                                <span class='plate__text__title'>Fricassée d'escargot</span>
+                                <span class='plate__text__menu'>Au piment d'Espelette</span>
                             </span>
-                            <span class='assiette__prix'>25€</span>
+                            <span class='plate__price'>25€</span>
 
                             <!-- validation -->
-                            <span class='assiette--valide'>
-                                <i class="fas fa-check-circle assiette--valide--icone"></i>
-                            </span>
-                        </label>
-                    </div>
-
-                    <!-- entrée 2 -->
-                    <div class='repas__entrée--choix'>
-
-                        <!-- sélection choix -->
-                        <div class='selection'></div>
-                        <div class='assiette assiette--deux'>
-
-                            <!-- description entrée -->
-                            <span class='assiette__texte'>
-                                <span class='assiette__texte__titre' title="Foie gras de canard mi-cuit">Foie gras de canard mi-cuit</span>
-                                <span class='assiette__texte__menu' title="Et ses copeaux de truffe noire">Et ses copeaux de truffe noire</span>
-                            </span>
-                            <span class='assiette__prix'>35€</span>
-
-                            <!-- validation -->
-                            <span class='assiette--valide'>
-                                <i class="fas fa-check-circle assiette--valide--icone"></i>
+                            <span class='plate--valid'>
+                                <i class="fas fa-check-circle plate--valid--icone"></i>
                             </span>
                         </div>
                     </div>
 
-                    <!-- entrée 3 -->
-                    <div class='repas__entrée--choix'>
+                    <!-- starter 2 -->
+                    <div class='meal__starter--choice'>
 
-                        <!-- sélection choix -->
-                        <div class='selection'></div>
-                        <div class='assiette assiette--trois'>
+                        <div class='plate'>
 
-                            <!-- description entrée -->
-                            <span class='assiette__texte'>
-                                <span class='assiette__texte__titre' title="Oeuf au plat">Oeuf au plat</span>
-                                <span class='assiette__texte__menu' title="Assaisonné à la truffe sur lit de caviar">Assaisonné à la truffe sur lit de caviar</span>
+                            <!-- description starter -->
+                            <span class='plate__text'>
+                                <span class='plate__text__title'>Foie gras de canard mi-cuit</span>
+                                <span class='plate__text__menu'>Et ses copeaux de truffe noire</span>
                             </span>
-                            <span class='assiette__prix'>20€</span>
+                            <span class='plate__price'>35€</span>
 
                             <!-- validation -->
-                            <span class='assiette--valide'>
-                                <i class="fas fa-check-circle assiette--valide--icone"></i>
+                            <span class='plate--valid'>
+                                <i class="fas fa-check-circle plate--valid--icone"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- starter 3 -->
+                    <div class='meal__starter--choice'>
+
+                        <div class='plate'>
+
+                            <!-- description starter -->
+                            <span class='plate__text'>
+                                <span class='plate__text__title'>Oeuf au plat</span>
+                                <span class='plate__text__menu'>Assaisonné à la truffe sur lit de caviar</span>
+                            </span>
+                            <span class='plate__price'>20€</span>
+
+                            <!-- validation -->
+                            <span class='plate--valid'>
+                                <i class="fas fa-check-circle plate--valid--icone"></i>
                             </span>
                         </div>
                     </div>
 
                 </div>
                 
-                <!-- titre des plats -->
-                <h3 class="repas__titre">plats<span class="repas__titre--barre"></span></h3>
+                <!-- title des plats -->
+                <h3 class="meal__title">plats<span class="meal__title--bar"></span></h3>
 
                 <!-- groupe des plats -->
-                <div class='repas__plat'>
+                <div class='meal__dinner'>
 
                     <!-- plat 1 -->
-                    <div class='repas__plat--choix'>
+                    <div class='meal__dinner--choice'>
 
-                        <!-- sélection choix -->
-                        <div class='selection'></div>
-                        <div class='assiette assiette--un'>
+                        <div class='plate'>
 
                             <!-- description plat -->
-                            <span class='assiette__texte'>
-                                <span class='assiette__texte__titre' title="Filet de boeuf aux herbes">Filet de boeuf aux herbes</span>
-                                <span class='assiette__texte__menu' title="Accompagné de sa ribambelle de légumes">Accompagné de sa ribambelle de légumes</span>
+                            <span class='plate__text'>
+                                <span class='plate__text__title'>Filet de boeuf aux herbes</span>
+                                <span class='plate__text__menu'>Accompagné de sa ribambelle de légumes</span>
                             </span>
-                            <span class='assiette__prix'>40€</span>
+                            <span class='plate__price'>40€</span>
 
                             <!-- validation -->
-                            <span class='assiette--valide'>
-                                <i class="fas fa-check-circle assiette--valide--icone"></i>
+                            <span class='plate--valid'>
+                                <i class="fas fa-check-circle plate--valid--icone"></i>
                             </span>
                         </div>
                     </div>
 
                     <!-- plat 2 -->
-                    <div class='repas__plat--choix'>
+                    <div class='meal__dinner--choice'>
 
-                        <!-- sélection choix -->
-                        <div class='selection'></div>
-                        <div class='assiette assiette--deux'>
+                        <div class='plate'>
 
                             <!-- description plat -->
-                            <span class='assiette__texte'>
-                                <span class='assiette__texte__titre' title="Parmentier de queue de boeuf">Parmentier de queue de boeuf</span>
-                                <span class='assiette__texte__menu' title="À la truffe noire sur sa purée de panais">À la truffe noire sur sa purée de panais</span>
+                            <span class='plate__text'>
+                                <span class='plate__text__title'>Parmentier de queue de boeuf</span>
+                                <span class='plate__text__menu'>À la truffe noire sur sa purée de panais</span>
                             </span>
-                            <span class='assiette__prix'>35€</span>
+                            <span class='plate__price'>35€</span>
 
                             <!-- validation -->
-                            <span class='assiette--valide'>
-                                <i class="fas fa-check-circle assiette--valide--icone"></i>
+                            <span class='plate--valid'>
+                                <i class="fas fa-check-circle plate--valid--icone"></i>
                             </span>
                         </div>
                     </div>
 
                     <!-- plat 3 -->
-                    <div class='repas__plat--choix'>
+                    <div class='meal__dinner--choice'>
 
-                        <!-- sélection choix -->
-                        <div class='selection'></div>
-                        <div class='assiette assiette--trois'>
+                        <div class='plate'>
 
                             <!-- description plat -->
-                            <span class='assiette__texte'>
-                                <span class='assiette__texte__titre' title="Filet de turbot">Filet de turbot</span>
-                                <span class='assiette__texte__menu' title="Aux agrumes">Aux agrumes</span>
+                            <span class='plate__text'>
+                                <span class='plate__text__title'>Filet de turbot</span>
+                                <span class='plate__text__menu'>Aux agrumes</span>
                             </span>
-                            <span class='assiette__prix'>44€</span>
+                            <span class='plate__price'>44€</span>
 
                             <!-- validation -->
-                            <span class='assiette--valide'>
-                                <i class="fas fa-check-circle assiette--valide--icone"></i>
+                            <span class='plate--valid'>
+                                <i class="fas fa-check-circle plate--valid--icone"></i>
                             </span>
                         </div>
                     </div>
                 </div>
             
-                <!-- titre des desserts -->
-                <h3 class="repas__titre">desserts<span class="repas__titre--barre"></span></h3>
+                <!-- title des desserts -->
+                <h3 class="meal__title">desserts<span class="meal__title--bar"></span></h3>
 
                 <!-- groupe des desserts -->
-                <div class='repas__dessert'>
+                <div class='meal__dessert'>
 
                     <!-- dessert 1 -->
-                    <div class='repas__dessert--choix'>
+                    <div class='meal__dessert--choice'>
 
-                        <!-- sélection choix -->
-                        <div class='selection'></div>
-                        <div class='assiette assiette--un'>
+                        <div class='plate'>
 
                             <!-- description dessert -->
-                            <span class='assiette__texte'>
-                                <span class='assiette__texte__titre' title="Paris-Brest">Paris-Brest</span>
-                                <span class='assiette__texte__menu' title="Revisité">Revisité</span>
+                            <span class='plate__text'>
+                                <span class='plate__text__title'>Paris-Brest</span>
+                                <span class='plate__text__menu'>Revisité</span>
                             </span>
-                            <span class='assiette__prix'>18€</span>
+                            <span class='plate__price'>18€</span>
 
                             <!-- validation -->
-                            <span class='assiette--valide'>
-                                <i class="fas fa-check-circle assiette--valide--icone"></i>
+                            <span class='plate--valid'>
+                                <i class="fas fa-check-circle plate--valid--icone"></i>
                             </span>
                         </div>
                     </div>
 
                     <!-- dessert 2 -->
-                    <div class='repas__dessert--choix'>
+                    <div class='meal__dessert--choice'>
 
-                        <!-- sélection choix -->
-                        <div class='selection'></div>
-                        <div class='assiette assiette--deux'>
+                        <div class='plate'>
 
                             <!-- description dessert -->
-                            <span class='assiette__texte'>
-                                <span class='assiette__texte__titre' title="Macaron au chocolat d'exception">Macaron au chocolat d'exception</span>
-                                <span class='assiette__texte__menu' title="Et glace à la vanille de Madagascar">Et glace à la vanille de Madagascar</span>
+                            <span class='plate__text'>
+                                <span class='plate__text__title'>Macaron au chocolat d'exception</span>
+                                <span class='plate__text__menu'>Et glace à la vanille de Madagascar</span>
                             </span>
-                            <span class='assiette__prix'>22€</span>
+                            <span class='plate__price'>22€</span>
 
                             <!-- validation -->
-                            <span class='assiette--valide'>
-                                <i class="fas fa-check-circle assiette--valide--icone"></i>
+                            <span class='plate--valid'>
+                                <i class="fas fa-check-circle plate--valid--icone"></i>
                             </span>
                         </div>
                     </div>
 
                     <!-- dessert 3 -->
-                    <div class='repas__dessert--choix'>
+                    <div class='meal__dessert--choice'>
 
-                        <!-- selection choix -->
-                        <div class='selection'></div>
-                        <div class='assiette assiette--trois'>
+                        <div class='plate'>
 
                             <!-- description dessert -->
-                            <span class='assiette__texte'>
-                                <span class='assiette__texte__titre' title="Mousse au chocolat">Mousse au chocolat</span>
-                                <span class='assiette__texte__menu' title="Au piment d'Espelette et à la truffe noire">Au piment d'Espelette et à la truffe noire</span>
+                            <span class='plate__text'>
+                                <span class='plate__text__title'>Mousse au chocolat</span>
+                                <span class='plate__text__menu'>Au piment d'Espelette et à la truffe noire</span>
                             </span>
-                            <span class='assiette__prix'>23€</span>
+                            <span class='plate__price'>23€</span>
 
                             <!-- validation -->
-                            <span class='assiette--valide'>
-                                <i class="fas fa-check-circle assiette--valide--icone"></i>
+                            <span class='plate--valid'>
+                                <i class="fas fa-check-circle plate--valid--icone"></i>
                             </span>
                         </div>
                     </div>
                 </div>
-                <button class='repas--bouton'>Commander
+                <button class='meal--button'>Commander
             </div>
         </main>
 
-        <!-- pied de page -->
-        <footer class='pied'>
+        <!-- footer de page -->
+        <footer class='footer'>
 
-            <!-- titre pied de page -->
-            <h4 class='pied__titre'>ohmyfood</h4>
+            <!-- title footer de page -->
+            <h4 class='footer__title'>ohmyfood</h4>
 
-            <!-- liste -->
-            <ul class='pied__liste'>
+            <!-- list -->
+            <ul class='footer__list'>
 
-                <li class='pied__liste--element'>
+                <li class='footer__list--element'>
 
-                    <!-- lien -->
-                    <a href='#' class='lien'><i class="fas fa-utensils lien__icone"></i>Proposer un restaurant</a>
+                    <!-- link -->
+                    <a href='#' class='link'><i class="fas fa-utensils link__icone"></i>Proposer un restaurant</a>
                 </li>
 
-                <li class='pied__liste--element'>
+                <li class='footer__list--element'>
 
-                    <!-- lien -->
-                    <a href='#' class='lien'><i class="fas fa-hands-helping lien__icone"></i>Devenir partenaire</a>
+                    <!-- link -->
+                    <a href='#' class='link'><i class="fas fa-hands-helping link__icone"></i>Devenir partenaire</a>
                 </li>
 
-                <li class='pied__liste--element'>
+                <li class='footer__list--element'>
 
-                    <!-- lien -->
-                    <a href='#' class='lien'>Mentions légales</a>
+                    <!-- link -->
+                    <a href='#' class='link'>Mentions légales</a>
                 </li>
 
-                <li class='pied__liste--element'>
+                <li class='footer__list--element'>
 
-                    <!-- lien vers boite mail -->
-                    <a href='mailto:ohmyfoodTest@hotmail.fr' class='lien'>Contact</a>
+                    <!-- link vers boite mail -->
+                    <a href='mailto:ohmyfoodTest@hotmail.fr' class='link'>Contact</a>
                 </li>
             </ul>
         </footer> 

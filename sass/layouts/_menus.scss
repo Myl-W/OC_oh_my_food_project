@@ -1,0 +1,239 @@
+@use "../utils/variables" as *;
+@use "../utils/keyframe" as *;
+
+/* menu des meal */
+
+.meal {
+    margin-top: 46px;
+    background-color: $color-bg-banner;
+    animation: flou 2s linear 0s forwards;
+    @media screen and (min-width: $desktop) {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+        flex-direction: column;
+    }
+
+    /* button formulaire carte du menu */
+    &--button{
+        height: 50px;
+        width: 185px;
+        display: block;
+        margin: 40px auto 70px auto;
+        border: none;
+        border-radius: 25px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(193.33deg, $color-purple -11.44%, $color-pink 123.93%);
+        color: $color-ink-dry;
+        &:hover{  
+            opacity: 0.9;
+            cursor: pointer;
+            animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+            box-shadow: 0px 5px 10px 0px #8e8e8e; 
+        }
+    }
+
+    /* zone des starters */
+    &__starter {
+        height: 250px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        border: none;
+        opacity: 0;
+        animation: flou 1.3s linear forwards;
+
+        @media screen and (min-width: $desktop) {
+            align-content: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        /* zone pour 4 choices */
+        &--fourchoice {
+            height: 320px;
+
+            @media screen and (min-width: $desktop) {
+                height: 170px;
+            }
+        }
+
+        /* type starter */
+        &--choice {
+            margin-left: 15px;
+            width: 94%;
+            @media screen and (min-width: $desktop) {
+                width: 50%;
+            }
+        }
+    }
+
+    /* zone des plats */
+    &__dinner {
+        height: 250px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        border: none;
+        opacity: 0;
+        animation: flou 1.3s linear forwards;
+
+        @media screen and (min-width: $desktop) {
+            align-content: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        /* type de dinner */
+        &--choice {
+            width: 94%;
+            margin-left: 15px;
+            @media screen and (min-width: $desktop) {
+                width: 50%;
+            }
+        }
+    }
+
+    /* zone des desserts */
+    &__dessert {
+        height: 250px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        border: none;
+        opacity: 0;
+        animation: flou 1.3s linear forwards;
+
+        @media screen and (min-width: $desktop) {
+            align-content: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        /* type des desserts */
+        &--choice {
+            width: 94%;
+            margin-left: 15px;
+            @media screen and (min-width: $desktop) {
+                width: 50%;
+            }
+        }
+    }
+
+    /* title des zones de meal */
+    &__title {
+        margin: 40px 0px 0px 13px;
+        font-size: $size-sixteen;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        @media screen and (min-width: $desktop) {
+            margin: 0% 0% 0% 25%;
+        }
+
+        /* barre sous les titles */
+        &--bar {
+            width: 12%;
+            height: 3px;
+            display: block;
+            margin: 5px 0 10px 0;
+            background-color: $color-green-light;
+
+            @media screen and (min-width: $desktop) {
+                width: 85px;
+                margin-left: 0%;
+            }
+        }
+    }
+}
+
+/* zone chaque plate */
+.plate {
+    width: 96%;
+    height: 68px;
+    display: flex;
+    /* start/center décale la div validée */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px #b4b4b4;
+    background-color: $color-bg-white;
+    overflow: hidden;
+    opacity: 0;
+    animation: flou 0.6s linear 1s forwards;
+
+    /* nom de plate */
+    &__text {
+        display: flex;
+        flex-flow: row wrap;
+        width: 80%;
+        margin-left: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        /* text accompagnant du menu */
+        &__title {
+            width: 100%;
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            height: 24px;
+            font-size: $size-eighteen;
+            margin: 12px 0 0 0;
+            font-weight: 500;
+        }
+
+        &__menu {
+            width: 100%;
+            display: block;
+            margin: -10px 0 0 0;
+            font-size: $size-fifteen;
+            font-weight: 300;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    /* price de plate */
+    &__price {
+        height: 32px;
+        width: 45px;
+        padding-left: 0px;
+        margin: 36px 3px 0 3px;
+        font-size: $size-fifteen;
+        font-weight: 500;
+        text-align: center;
+        transition: all 0.4s linear;
+    }
+
+    /* zone validation choice plate */
+    &--valid {
+        width: 0px;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #99E2D0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: all 0.4s linear;
+
+        &--icone {
+            margin: 20px;
+            width: 60px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-ink-dry;
+        }
+    }
+
+    &:hover>.plate--valid {
+        width: 60px;
+    }
+}

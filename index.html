@@ -19,24 +19,24 @@
 <body>
 
     <!-- loader -->
-    <div class='conteneur'>
-        <div class="conteneur__loader">
-            <span class="conteneur__loader--filtre"></span>
-            <span class="conteneur__loader--filtre"></span>
-            <span class="conteneur__loader--filtre"></span>
-            <span class="conteneur__loader--filtre"></span>
-            <span class="conteneur__loader--filtre"></span>
-            <span class="conteneur__loader--filtre">
-                <span class="conteneur__loader--filtre--sat"></span>
-                <span class="conteneur__loader--filtre--sat"></span>
-                <span class="conteneur__loader--filtre--sat"></span>
+    <div class='container'>
+        <div class="container__loader">
+            <span class="container__loader--filter"></span>
+            <span class="container__loader--filter"></span>
+            <span class="container__loader--filter"></span>
+            <span class="container__loader--filter"></span>
+            <span class="container__loader--filter"></span>
+            <span class="container__loader--filter">
+                <span class="container__loader--filter--sat"></span>
+                <span class="container__loader--filter--sat"></span>
+                <span class="container__loader--filter--sat"></span>
             </span>
-            <span class="conteneur__loader__texte">ohmyfood
-                <span class="conteneur__loader__texte--proj"></span>
-                <span class="conteneur__loader__texte--texte">ohmyfood</span>
+            <span class="container__loader__text">ohmyfood
+                <span class="container__loader__text--proj"></span>
+                <span class="container__loader__text--text">ohmyfood</span>
             </span>
-            <span class="conteneur__loader__icone"><i class="fas fa-utensils"></i></span>
-            <span class="conteneur__loader--point">
+            <span class="container__loader__icone"><i class="fas fa-utensils"></i></span>
+            <span class="container__loader--point">
                 <span class="point"></span>
                 <span class="point"></span>
                 <span class="point"></span>
@@ -46,173 +46,172 @@
         </div>
     </div>
 
-    <!-- tête de page -->
-    <header class='tête'>
-        <p class='tête__logo'><img src='image/logo/ohmyfood.png' alt='logo ohmyfood'></p>
+    <!-- head de page -->
+    <header class='head'>
+        <img class="head__logo"src='image/logo/ohmyfood.png' alt='logo ohmyfood'>
     </header>
 
     <main>
 
-        <!-- moteur de recherche -->
-        <section class='recherche'>
+        <!-- moteur de search -->
+        <section class='search'>
 
-            <!-- zone de recherche -->
+            <!-- zone de search -->
             <div class="local">
                 <i class="fas fa-map-marker-alt"></i>
-                <span class='recherche--zone'>Paris, Belleville</span>
+                <span class='search--zone'>Paris, Belleville</span>
             </div>
-            <!-- titre + texte -->
-            <h1 class='recherche__titre'>Réservez le menu qui vous convient</h1>
-            <!-- Mal fait ou dit. Le choix du menu est fait après le choix du restaurant -->
-            <p class='recherche__texte'>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <!-- title + text -->
+            <h1 class='search__title'>Réservez le menu qui vous convient</h1>
+            <!-- Mal fait ou dit. Le choice du menu est fait après le choice du restaurant -->
+            <p class='search__text'>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
-            <!-- bouton de recherche-->
-            <button class='recherche--bouton'>Explorer nos restaurants
+            <!-- button de search-->
+            <div class='search--button'>Explorer nos restaurants
 
         </section>
 
-        <!-- Fonctionnement -->
-        <div class='fonctionnement'>
+        <!-- functioning -->
+        <div class='functioning'>
 
-            <!-- titre -->
-            <h2 class='fonctionnement__titre'>Fonctionnement</h2>
+            <!-- title -->
+            <h2 class='functioning__title'>Fonctionnement</h2>
 
-            <!-- zone des boutons, admétons que c'est une navigation -->
-            <div class='fonctionnement__explication'>
+            <!-- zone des buttons, admétons que c'est une navigation -->
+            <div class='functioning__explication'>
 
-                <!-- bouton 1 de fonctionnement -->
-                <button class='bouton'>
+                <!-- button 1 de functioning -->
+                <div class='button'>
 
-                    <!-- numero -->
-                    <span class="bouton--numero">1</span>
+                    <!-- number -->
+                    <span class="button--number">1</span>
 
                     <!-- icones --> <!-- double classe car taille icone différente pour pas faire de répétitions -->
-                    <i class="fas fa-mobile-alt bouton--noir bouton--tel"></i>
-                    <span class='fa bouton--violet bouton--tel'>&#xf3cd;</span>
+                    <i class="fas fa-mobile-alt button--dark "></i>
 
-                    <!-- texte -->
+                    <!-- text -->
                     Choisissez un restaurant
 
-                </button>
+                </div>
 
-                <!-- bouton 2 de fonctionnement -->
-                <button class='bouton'>
+                <!-- button 2 de functioning -->
+                <div class='button'>
 
-                    <!-- numero -->
-                    <span class="bouton--numero">2</span>
+                    <!-- number -->
+                    <span class="button--number">2</span>
 
                     <!-- icones -->
-                    <i class="fas fa-list-ul bouton--noir"></i>
-                    <span class='fa bouton--violet'>&#xf0ca;</span>
+                    <i class="fas fa-list-ul button--dark"></i>
+                    <span class='fa button--purple'></span>
 
-                    <!-- texte -->
+                    <!-- text -->
                     Composez votre menu
 
-                </button>
+                </div>
 
-                <!-- bouton 3 de fonctionnement -->
-                <button class='bouton'>
+                <!-- button 3 de functioning -->
+                <div class='button'>
 
-                    <!-- numero -->
-                    <span class="bouton--numero">3</span>
+                    <!-- number -->
+                    <span class="button--number">3</span>
 
                     <!-- icones -->
-                    <i class="fas fa-store bouton--store"></i>
-                    <span class='fa bouton--violet'>&#xf54e;</span>
+                    <i class="fas fa-store button--store"></i>
+                    <span class='fa button--purple'></span>
 
-                    <!-- texte -->
+                    <!-- text -->
                     Dégustez au restaurant
 
-                </button>
+                </div>
             </div>
         </div>
 
-        <!-- partie restaurants --> <!-- section parce que "c'est la réponse" du moteur de recherche -->
+        <!-- partie restaurants -->
         <section class='restaurants'>
 
-            <h2 class='restaurants__titre'>Restaurants</h2>
+            <h2 class='restaurants__title'>Restaurants</h2>
 
-            <!-- navigation via les cartes restaurants -->
+            <!-- navigation via les cards restaurants -->
             <div class='restaurants__navigation'>
 
-                <!-- carte restaurant -->
-                <article class='carte'>
+                <!-- card restaurant -->
+                <article class='card'>
 
-                    <!-- lien -->
-                    <a href="restaurant/la_palette_du_gout.html" class='carte__lien'>
-                        <span class='carte__lien--nouveau'>Nouveau</span>
-                        <img class='carte__lien__image' src='image/restaurants/la-palette-du-gout900.webp'
+                    <!-- link -->
+                    <a href="restaurant/la_palette_du_gout.html" class='card__link'>
+                        <span class='card__link--new'>Nouveau</span>
+                        <img class='card__link__image' src='image/restaurants/la-palette-du-gout900.webp'
                             alt='La palette du goût'>
 
                         <!-- nom du restaurant et lieu -->
-                        <h3 class='carte__lien__titre'>La palette du goût</h3>
-                        <p class='carte__lien__texte'>Ménilmontant</p>
+                        <h3 class='card__link__title'>La palette du goût</h3>
+                        <p class='card__link__text'>Ménilmontant</p>
 
                         <!-- sélection j'aime -->
-                        <div class='coeur'>
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart coeur__filtre coeur__filtre--plein"></i>
+                        <div class='heart'>
+                            <i class="far fa-heart heart__filter"></i>
+                            <i class="fas fa-heart heart__filter heart__filter--full"></i>
                         </div>
                     </a>
                 </article>
 
-                <!-- carte restaurant -->
-                <article class='carte'>
+                <!-- card restaurant -->
+                <article class='card'>
 
-                    <!-- lien -->
-                    <a href="restaurant/la_note_enchantee.html" class='carte__lien'>
-                        <span class='carte__lien--nouveau'>Nouveau</span>
-                        <img class='carte__lien__image' src="image/restaurants/la-note-enchantee900.webp"
+                    <!-- link -->
+                    <a href="restaurant/la_note_enchantee.html" class='card__link'>
+                        <span class='card__link--new'>Nouveau</span>
+                        <img class='card__link__image' src="image/restaurants/la-note-enchantee900.webp"
                             alt="La note enchantée">
 
                         <!-- nom du restaurant et lieu -->
-                        <h3 class='carte__lien__titre'>La note enchantée</h3>
-                        <p class='carte__lien__texte'>Charonne</p>
+                        <h3 class='card__link__title'>La note enchantée</h3>
+                        <p class='card__link__text'>Charonne</p>
 
                         <!-- sélection j'aime -->
-                        <div class='coeur'>
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart coeur__filtre coeur__filtre--plein"></i>
+                        <div class='heart'>
+                            <i class="far fa-heart heart__filter"></i>
+                            <i class="fas fa-heart heart__filter heart__filter--full"></i>
                         </div>
                     </a>
                 </article>
 
-                <!-- carte restaurant -->
-                <article class='carte'>
+                <!-- card restaurant -->
+                <article class='card'>
 
-                    <!-- lien -->
-                    <a href="restaurant/a_la_française.html" class='carte__lien'>
-                        <img class='carte__lien__image' src="image/restaurants/a-la-française900.webp"
+                    <!-- link -->
+                    <a href="restaurant/a_la_française.html" class='card__link'>
+                        <img class='card__link__image' src="image/restaurants/a-la-française900.webp"
                             alt="À la française">
 
                         <!-- nom du restaurant et lieu -->
-                        <h3 class='carte__lien__titre'>À la française</h3>
-                        <p class='carte__lien__texte'>Cité rouge</p>
+                        <h3 class='card__link__title'>À la française</h3>
+                        <p class='card__link__text'>Cité rouge</p>
 
                         <!-- sélection j'aime -->
-                        <div class='coeur'>
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart coeur__filtre coeur__filtre--plein"></i>
+                        <div class='heart'>
+                            <i class="far fa-heart heart__filter"></i>
+                            <i class="fas fa-heart heart__filter heart__filter--full"></i>
                         </div>
                     </a>
                 </article>
 
-                <!-- carte restaurant -->
-                <article class='carte'>
+                <!-- card restaurant -->
+                <article class='card'>
 
-                    <!-- lien -->
-                    <a href="restaurant/le_delice_des_sens.html" class='carte__lien'>
-                        <img class='carte__lien__image' src='image/restaurants/le-delice-des-sens900.webp'
+                    <!-- link -->
+                    <a href="restaurant/le_delice_des_sens.html" class='card__link'>
+                        <img class='card__link__image' src='image/restaurants/le-delice-des-sens900.webp'
                             alt="Le délice des sens">
 
                         <!-- nom du restaurant et lieu -->
-                        <h3 class='carte__lien__titre'>Le délice des sens</h3>
-                        <p class='carte__lien__texte'>Folie-Méricourt</p>
+                        <h3 class='card__link__title'>Le délice des sens</h3>
+                        <p class='card__link__text'>Folie-Méricourt</p>
 
                         <!-- sélection j'aime -->
-                        <div class='coeur'>
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart coeur__filtre coeur__filtre--plein"></i>
+                        <div class='heart'>
+                            <i class="far fa-heart heart__filter"></i>
+                            <i class="fas fa-heart heart__filter heart__filter--full"></i>
                         </div>
                     </a>
                 </article>
@@ -220,39 +219,40 @@
         </section>
     </main>
 
-    <!-- pied de page -->
-    <footer class='pied'>
+    <!-- footer de page -->
+    <footer class='footer'>
 
-        <!-- titre pied de page -->
-        <h4 class='pied__titre'>ohmyfood</h4>
+        <!-- list -->
+        <ul class='footer__list'>
 
-        <!-- liste -->
-        <ul class='pied__liste'>
+            <li class='footer__list--element'>
 
-            <li class='pied__liste--element'>
-
-                <!-- lien -->
-                <a href='#' class='lien'><i class="fas fa-utensils lien__icone"></i>Proposer un restaurant</a>
+                <!-- link -->
+                <a href='#' class='link'><i class="fas fa-utensils link__icone"></i>Proposer un restaurant</a>
             </li>
 
-            <li class='pied__liste--element'>
+            <li class='footer__list--element'>
 
-                <!-- lien -->
-                <a href='#' class='lien'><i class="fas fa-hands-helping lien__icone"></i>Devenir partenaire</a>
+                <!-- link -->
+                <a href='#' class='link'><i class="fas fa-hands-helping link__icone"></i>Devenir partenaire</a>
             </li>
 
-            <li class='pied__liste--element'>
+            <li class='footer__list--element'>
 
-                <!-- lien -->
-                <a href='#' class='lien'>Mentions légales</a>
+                <!-- link -->
+                <a href='#' class='link'>Mentions légales</a>
             </li>
 
-            <li class='pied__liste--element'>
+            <li class='footer__list--element'>
 
-                <!-- lien vers boite mail -->
-                <a href='mailto:ohmyfoodTest@hotmail.fr' class='lien'>Contact</a>
+                <!-- link vers boite mail -->
+                <a href='mailto:ohmyfoodTest@hotmail.fr' class='link'>Contact</a>
             </li>
         </ul>
+
+        <!-- title footer de page -->
+        <p class='footer__title'>ohmyfood</p>
+        
     </footer>
 </body>
 

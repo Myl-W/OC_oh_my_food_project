@@ -1,66 +1,61 @@
 @use "../utils/variables" as *;
 /* footer */
-.pied{
+.footer{
     height: 203px;
-    margin-top: 30px;
-    color: $couleur-encre-sec;
-    background-color: $couleur-footer;
-    /* titre footer */
-    &__titre{
-        margin: 0;
-        padding: 20px 0 10px 0;
+    color: $color-ink-dry;
+    background-color: $color-footer;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    @media screen and (min-width: $desktop){
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 5%;
+        padding-bottom: 3%;
+    } 
+    /* title footer */
+    &__title{
         font-weight: 400;
-        text-indent: 7%;
-        font-size: $size-dix-huit;
+        font-size: $size-eighteen;
         font-family: 'Shrikhand', cursive;
     } /* ensemble de li */
-    &__liste{
-        max-width: 300px;
-        display: flex;
-        flex-flow: row wrap;
-        margin: 0 0 0 7%;
-        padding: 0;  
-        font-size: $size-seize;
+    &__list{
+        font-size: $size-sixteen;
         @media screen and (min-width: $desktop){
-            max-width: 80%;
-            margin: 20px 0 0 200px;
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
         } /* li */
         &--element{
-            padding: 0;
-            margin: 0 25% 0 0; 
+            padding: 0; 
             list-style-type: none;
             @media screen and (min-width: $desktop){
-                width: 18%;
-                margin: 0 1% 0 6%;  
+                margin-left: 1%;
             }
         }
     }
 } /* zone cliquable de texte */
-.lien{
+.link{
     display: block;
     margin:0;
     padding: 5px 0 5px 0;
-    color: $couleur-encre-sec;
-    font-size: $size-seize; 
+    color: $color-ink-dry;
+    font-size: $size-sixteen; 
     font-weight: 500;  
     text-decoration: none;
     cursor: pointer;
     &:link{
-        color: $couleur-encre-sec;
+        color: $color-ink-dry;
     }
     &:visited{
-        color: $couleur-encre-sec;
+        color: $color-ink-dry;
     }
     &__icone{
         width: 18px;
         margin-right: 5px;
-        font-size: $size-quinze;
+        font-size: $size-fifteen;
     }
 }
-
-
-
-
-
-
-

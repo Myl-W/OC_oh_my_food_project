@@ -1,0 +1,84 @@
+@use "../utils/variables" as *;
+@use "../utils/keyframe" as *;
+
+/* bloc bem heart réutilisé */
+.heart{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    @media screen and (min-width: $desktop){
+        left: 72%;
+        top: 63%;
+    } /* li */
+    &:hover{
+         cursor:pointer;
+    } 
+    
+    &__filter{
+        font-size: 22px;
+        right: 0px;
+        top: 0px;
+         /* heart full */
+         @media screen and (min-width: $desktop){
+            position: absolute;
+            left: 80%;
+            top: 62%;
+        }
+
+        &--full{
+            position: absolute;
+            color: transparent;
+            opacity: 0;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(193.33deg, $color-purple -11.44%, $color-pink 123.93%);
+            &:hover{
+                animation: heart-in 1s linear forwards;
+            }
+            @media screen and (min-width: $desktop){
+                position: absolute;
+                left: 80%;
+                top: 62%;
+            }
+        }
+    }
+}
+
+.heartBanner{
+    position: absolute;
+    right: 17px;
+    @media screen and (min-width: $desktop){
+        left: 72%;
+        top: 63%;
+    } /* li */
+    &:hover{
+         cursor:pointer;
+    } 
+    
+    &__filter{
+        font-size: 22px;
+        right: 0px;
+        top: 0px;
+         /* heart full */
+         @media screen and (min-width: $desktop){
+            position: absolute;
+            left: 80%;
+            top: 62%;
+        }
+
+        &--full{
+            position: absolute;
+            color: transparent;
+            opacity: 0;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(193.33deg, $color-purple -11.44%, $color-pink 123.93%);
+            &:hover{
+                animation: heart-in 1s linear forwards;
+            }
+            @media screen and (min-width: $desktop){
+                position: absolute;
+                left: 80%;
+                top: 62%;
+            }
+        }
+    }
+}

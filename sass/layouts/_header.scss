@@ -2,28 +2,28 @@
 @use "../utils/keyframe" as *;
 
 /* header */
-.tête{
-    margin-bottom: 3%;
+.head{
+    padding: 16px;
     position: relative;
-    background: $coul-bg-blanc;
+    background: $color-bg-white;
     text-align: center;
 
     &__logo{
-        margin: 0;
-        padding-top: 5%;
+        width: 180px;
+        padding: 10px;
         }
 
-    &__flèche{
+    &__arrow{
         width: 18px;
         height: 20px;
         padding: 14px 15px 14px 15px;
         position:absolute;
         top: 9px;
         left: 2%; 
-        color: $couleur-encre;
+        color: $color-ink;
         text-decoration: none;
         &:visited{
-            color: $couleur-encre;
+            color: $color-ink;
         }
     }
 }

@@ -1,17 +1,15 @@
 
- @use "utils/variables";
  @use "base/regles";
- @use "components/boutons";
+ @use "base/reset";
+ @use "layouts/recherche";
  @use "layouts/header";
- @use "layouts/bandeau";
- @use "layouts/formulaires";
+ @use "layouts/banner";
+ @use "layouts/menus";
  @use "layouts/navigation";
- @use "layouts/coeur";
+ @use "layouts/heart";
  @use "layouts/footer";
- @use "pages/fonctionnement";
- @use "pages/loader";
-
-
+ @use "layouts/fonctionnement";
+ @use "loader/loader";
  
  
  
