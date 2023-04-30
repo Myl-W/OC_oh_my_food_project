@@ -10,11 +10,11 @@
     padding-bottom: 25px;
     padding-top: 25px;
     @media screen and (min-width: $desktop){
-        flex-direction: row;
-        justify-content: flex-end;
+        flex-direction: row-reverse;
         align-items: flex-end;
         padding-right: 5%;
         padding-bottom: 3%;
+        justify-content: space-evenly;
     } 
     /* title footer */
     &__title{
@@ -26,8 +26,9 @@
         font-size: $size-sixteen;
         @media screen and (min-width: $desktop){
             display: flex;
-            width: 50%;
-            justify-content: space-around;
+            width: 82%;
+            padding-left: 30%;
+            justify-content: space-evenly;
         } /* li */
         &--element{
             padding: 0; 

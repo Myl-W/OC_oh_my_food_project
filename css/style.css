@@ -317,6 +317,7 @@ body {
 .banner__text__title {
   font-size: 28px;
   font-weight: 300;
+  margin-right: 20px;
   font-family: "Shrikhand", cursive;
 }
 @media screen and (max-width: 319px) {
@@ -330,12 +331,21 @@ body {
     text-indent: 0;
   }
 }
+.banner__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* menu des meal */
 .meal {
   margin-top: 46px;
   background-color: #F7F7F7;
   animation: flou 2s linear 0s forwards;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   /* button formulaire carte du menu */
   /* zone des starters */
   /* zone des plats */
@@ -344,11 +354,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .meal {
-    width: 80%;
-    display: flex;
-    justify-content: center;
     margin-left: 10%;
-    flex-direction: column;
+    margin-right: 10%;
   }
 }
 .meal--button {
@@ -373,8 +380,8 @@ body {
 .meal__starter {
   height: 250px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   border: none;
   opacity: 0;
   animation: flou 1.3s linear forwards;
@@ -383,17 +390,18 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .meal__starter {
-    align-content: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
   }
 }
 .meal__starter--fourchoice {
-  height: 320px;
+  margin-left: 15px;
+  width: 94%;
 }
 @media screen and (min-width: 1024px) {
   .meal__starter--fourchoice {
-    height: 170px;
+    width: 60%;
+    margin: 0;
   }
 }
 .meal__starter--choice {
@@ -402,14 +410,15 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .meal__starter--choice {
-    width: 50%;
+    width: 60%;
+    margin: 0;
   }
 }
 .meal__dinner {
   height: 250px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   border: none;
   opacity: 0;
   animation: flou 1.3s linear forwards;
@@ -417,9 +426,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .meal__dinner {
-    align-content: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
   }
 }
 .meal__dinner--choice {
@@ -428,14 +436,15 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .meal__dinner--choice {
-    width: 50%;
+    width: 60%;
+    margin: 0;
   }
 }
 .meal__dessert {
   height: 250px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   border: none;
   opacity: 0;
   animation: flou 1.3s linear forwards;
@@ -443,9 +452,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .meal__dessert {
-    align-content: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
   }
 }
 .meal__dessert--choice {
@@ -454,7 +462,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .meal__dessert--choice {
-    width: 50%;
+    width: 60%;
+    margin: 0;
   }
 }
 .meal__title {
@@ -466,11 +475,11 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .meal__title {
-    margin: 0% 0% 0% 25%;
+    margin: 0% 0% 0% 20%;
   }
 }
 .meal__title--bar {
-  width: 12%;
+  width: 40px;
   height: 3px;
   display: block;
   margin: 5px 0 10px 0;
@@ -481,6 +490,18 @@ body {
     width: 85px;
     margin-left: 0%;
   }
+}
+
+.starters {
+  width: 90%;
+}
+
+.dinners {
+  width: 90%;
+}
+
+.desserts {
+  width: 90%;
 }
 
 /* zone chaque plate */
@@ -537,7 +558,6 @@ body {
   margin: 36px 3px 0 3px;
   font-size: 15px;
   font-weight: 500;
-  text-align: center;
   transition: all 0.4s linear;
 }
 .plate--valid {
@@ -552,12 +572,7 @@ body {
   transition: all 0.4s linear;
 }
 .plate--valid--icone {
-  margin: 20px;
-  width: 60px;
   font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #FFFFFF;
 }
 .plate:hover > .plate--valid {
@@ -694,9 +709,7 @@ body {
   cursor: pointer;
 }
 .heart__filter {
-  font-size: 22px;
-  right: 0px;
-  top: 0px;
+  font-size: 27px;
   /* heart full */
 }
 @media screen and (min-width: 1024px) {
@@ -725,23 +738,21 @@ body {
 }
 
 .heartBanner {
-  position: absolute;
-  right: 17px;
+  position: sticky;
   /* li */
 }
 @media screen and (min-width: 1024px) {
   .heartBanner {
-    left: 72%;
-    top: 63%;
+    margin-bottom: 25px;
   }
 }
 .heartBanner:hover {
   cursor: pointer;
 }
 .heartBanner__filter {
-  font-size: 22px;
-  right: 0px;
-  top: 0px;
+  font-size: 27px;
+  position: relative;
+  left: 10px;
   /* heart full */
 }
 @media screen and (min-width: 1024px) {
@@ -784,11 +795,11 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .footer {
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
     align-items: flex-end;
     padding-right: 5%;
     padding-bottom: 3%;
+    justify-content: space-evenly;
   }
 }
 .footer__title {
@@ -803,8 +814,9 @@ body {
 @media screen and (min-width: 1024px) {
   .footer__list {
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    width: 82%;
+    padding-left: 30%;
+    justify-content: space-evenly;
   }
 }
 .footer__list--element {

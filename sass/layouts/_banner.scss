@@ -36,6 +36,7 @@
         &__title{
             font-size: 28px;
             font-weight: 300;
+            margin-right: 20px;
             font-family: 'Shrikhand', cursive;
             @media screen and (max-width: 319px){
                 font-size: 23px;
@@ -46,4 +47,9 @@
             }
         }
     }
+    &__center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
 }

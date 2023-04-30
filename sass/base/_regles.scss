@@ -8,15 +8,18 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+
+}
+
 /* sélection texte */
 ::selection{
     background-color: unset;
     color: unset;
 }
-
-@media screen and (min-width: $desktop){
+    @media screen and (min-width: $desktop){
     ::selection{
         background-color: $color-pink;
         color: $color-green-light;
     }
-}
+    }

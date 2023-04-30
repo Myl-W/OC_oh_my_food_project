@@ -7,12 +7,13 @@
     margin-top: 46px;
     background-color: $color-bg-banner;
     animation: flou 2s linear 0s forwards;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     @media screen and (min-width: $desktop) {
-        width: 80%;
-        display: flex;
-        justify-content: center;
         margin-left: 10%;
-        flex-direction: column;
+        margin-right: 10%;
     }
 
     /* button formulaire carte du menu */
@@ -40,24 +41,24 @@
     &__starter {
         height: 250px;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         border: none;
         opacity: 0;
         animation: flou 1.3s linear forwards;
 
         @media screen and (min-width: $desktop) {
-            align-content: center;
-            justify-content: space-evenly;
-            flex-direction: column;
+            margin-bottom: 40px;
+            align-items: center;
         }
 
         /* zone pour 4 choices */
         &--fourchoice {
-            height: 320px;
-
+            margin-left: 15px;
+            width: 94%;
             @media screen and (min-width: $desktop) {
-                height: 170px;
+                width: 60%;
+                margin: 0;
             }
         }
 
@@ -66,7 +67,8 @@
             margin-left: 15px;
             width: 94%;
             @media screen and (min-width: $desktop) {
-                width: 50%;
+                width: 60%;
+                margin: 0;
             }
         }
     }
@@ -75,16 +77,15 @@
     &__dinner {
         height: 250px;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         border: none;
         opacity: 0;
         animation: flou 1.3s linear forwards;
 
         @media screen and (min-width: $desktop) {
-            align-content: center;
-            justify-content: space-evenly;
-            flex-direction: column;
+            margin-bottom: 40px;
+            align-items: center;
         }
 
         /* type de dinner */
@@ -92,7 +93,8 @@
             width: 94%;
             margin-left: 15px;
             @media screen and (min-width: $desktop) {
-                width: 50%;
+                width: 60%;
+                margin: 0;
             }
         }
     }
@@ -101,16 +103,15 @@
     &__dessert {
         height: 250px;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         border: none;
         opacity: 0;
         animation: flou 1.3s linear forwards;
 
         @media screen and (min-width: $desktop) {
-            align-content: center;
-            justify-content: space-evenly;
-            flex-direction: column;
+            margin-bottom: 40px;
+            align-items: center;
         }
 
         /* type des desserts */
@@ -118,7 +119,8 @@
             width: 94%;
             margin-left: 15px;
             @media screen and (min-width: $desktop) {
-                width: 50%;
+                width: 60%;
+                margin: 0;
             }
         }
     }
@@ -131,12 +133,12 @@
         text-transform: uppercase;
 
         @media screen and (min-width: $desktop) {
-            margin: 0% 0% 0% 25%;
+            margin: 0% 0% 0% 20%;
         }
 
         /* barre sous les titles */
         &--bar {
-            width: 12%;
+            width: 40px;
             height: 3px;
             display: block;
             margin: 5px 0 10px 0;
@@ -148,6 +150,18 @@
             }
         }
     }
+}
+
+.starters {
+    width: 90%;
+}
+
+.dinners {
+    width: 90%;
+}
+
+.desserts {
+    width: 90%;
 }
 
 /* zone chaque plate */
@@ -206,7 +220,6 @@
         margin: 36px 3px 0 3px;
         font-size: $size-fifteen;
         font-weight: 500;
-        text-align: center;
         transition: all 0.4s linear;
     }
 
@@ -223,12 +236,7 @@
         transition: all 0.4s linear;
 
         &--icone {
-            margin: 20px;
-            width: 60px;
             font-size: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             color: $color-ink-dry;
         }
     }
