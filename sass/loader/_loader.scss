@@ -55,29 +55,8 @@
             &:nth-child(6){
                 background: transparent;
                 animation: inverse 2.5s linear;
-            } /* 3 satellites */
-            &--sat{
-                width: 5px;
-                height: 5px;
-                position: absolute;
-                border-radius: 50%;
-                animation: 0.1s satgros linear 2s forwards;
-                &:nth-child(1){
-                    top: 175px;
-                    right: 16px;
-                    background: radial-gradient($color-purple 50%, $color-load 0%);
-                }
-                &:nth-child(2){
-                    left: 115px;
-                    bottom: 227px;
-                    background: radial-gradient($color-green-light 50%, $color-load 0%);
-                }
-                &:nth-child(3){
-                    top: 175px;
-                    left: 16px;
-                    background: radial-gradient($color-pink 50%, $color-load 0%);
-                }
-            }
+            } 
+            
         } /* ohmyfood */
         &__text{
             height: 40px;

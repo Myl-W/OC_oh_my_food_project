@@ -5,6 +5,46 @@
     color: $color-ink-dry;
     background-color: $color-footer;
     display: flex;
+    flex-direction: column-reverse;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    @media screen and (min-width: $desktop){
+        flex-direction: row;
+        align-items: flex-end;
+        padding-right: 5%;
+        padding-bottom: 3%;
+        justify-content: space-evenly;
+    } 
+    /* title footer */
+    &__title{
+        font-weight: 400;
+        font-size: $size-eighteen;
+        font-family: 'Shrikhand', cursive;
+    } /* ensemble de li */
+    &__list{
+        font-size: $size-sixteen;
+        @media screen and (min-width: $desktop){
+            display: flex;
+            width: 82%;
+            padding-left: 20%;
+            justify-content: space-evenly;
+        } /* li */
+        &--element{
+            padding: 0; 
+            list-style-type: none;
+            @media screen and (min-width: $desktop){
+                margin-left: 1%;
+            }
+        }
+    }
+} 
+
+.mealFooter{
+    height: 203px;
+    color: $color-ink-dry;
+    background-color: $color-footer;
+    display: flex;
     flex-direction: column;
     padding-left: 25px;
     padding-bottom: 25px;
@@ -27,7 +67,7 @@
         @media screen and (min-width: $desktop){
             display: flex;
             width: 82%;
-            padding-left: 30%;
+            padding-left: 20%;
             justify-content: space-evenly;
         } /* li */
         &--element{
@@ -37,8 +77,9 @@
                 margin-left: 1%;
             }
         }
-    }
-} /* zone cliquable de texte */
+}
+
+/* zone cliquable de texte */
 .link{
     display: block;
     margin:0;
@@ -59,4 +100,5 @@
         margin-right: 5px;
         font-size: $size-fifteen;
     }
+}
 }
