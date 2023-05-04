@@ -1,46 +1,7 @@
 @use "../utils/variables" as *;
-/* footer */
-.footer{
-    height: 203px;
-    color: $color-ink-dry;
-    background-color: $color-footer;
-    display: flex;
-    flex-direction: column-reverse;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    @media screen and (min-width: $desktop){
-        flex-direction: row;
-        align-items: flex-end;
-        padding-right: 5%;
-        padding-bottom: 3%;
-        justify-content: space-evenly;
-    } 
-    /* title footer */
-    &__title{
-        font-weight: 400;
-        font-size: $size-eighteen;
-        font-family: 'Shrikhand', cursive;
-    } /* ensemble de li */
-    &__list{
-        font-size: $size-sixteen;
-        @media screen and (min-width: $desktop){
-            display: flex;
-            width: 82%;
-            padding-left: 20%;
-            justify-content: space-evenly;
-        } /* li */
-        &--element{
-            padding: 0; 
-            list-style-type: none;
-            @media screen and (min-width: $desktop){
-                margin-left: 1%;
-            }
-        }
-    }
-} 
 
-.mealFooter{
+/* footer */
+.footer {
     height: 203px;
     color: $color-ink-dry;
     background-color: $color-footer;
@@ -49,56 +10,141 @@
     padding-left: 25px;
     padding-bottom: 25px;
     padding-top: 25px;
-    @media screen and (min-width: $desktop){
+
+    @media screen and (min-width: $desktop) {
         flex-direction: row-reverse;
         align-items: flex-end;
         padding-right: 5%;
         padding-bottom: 3%;
         justify-content: space-evenly;
-    } 
+    }
+
     /* title footer */
-    &__title{
+    &__title {
         font-weight: 400;
         font-size: $size-eighteen;
         font-family: 'Shrikhand', cursive;
-    } /* ensemble de li */
-    &__list{
+    }
+
+    /* ensemble de li */
+    &__list {
         font-size: $size-sixteen;
-        @media screen and (min-width: $desktop){
+        list-style-type: none;
+
+        @media screen and (min-width: $desktop) {
             display: flex;
             width: 82%;
             padding-left: 20%;
             justify-content: space-evenly;
-        } /* li */
-        &--element{
-            padding: 0; 
+        }
+
+        /* li */
+        &--element {
+            padding: 0;
             list-style-type: none;
-            @media screen and (min-width: $desktop){
+
+            @media screen and (min-width: $desktop) {
                 margin-left: 1%;
             }
         }
+    }
+
+    &__link {
+        display: block;
+        margin: 0;
+        padding: 5px 0 5px 0;
+        color: $color-ink-dry;
+        font-size: $size-sixteen;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:link {
+            color: $color-ink-dry;
+        }
+
+        &:visited {
+            color: $color-ink-dry;
+        }
+
+        &__icone {
+            width: 18px;
+            margin-right: 5px;
+            font-size: $size-fifteen;
+        }
+    }
+
 }
 
-/* zone cliquable de texte */
-.link{
-    display: block;
-    margin:0;
-    padding: 5px 0 5px 0;
+.mealFooter {
+    height: 203px;
     color: $color-ink-dry;
-    font-size: $size-sixteen; 
-    font-weight: 500;  
-    text-decoration: none;
-    cursor: pointer;
-    &:link{
+    background-color: $color-footer;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        padding-right: 5%;
+        padding-bottom: 3%;
+        justify-content: space-evenly;
+    }
+
+    /* title footer */
+    &__title {
+        font-weight: 400;
+        font-size: $size-eighteen;
+        font-family: 'Shrikhand', cursive;
+    }
+
+    /* ensemble de li */
+    &__list {
+        font-size: $size-sixteen;
+        list-style-type: none;
+
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            width: 82%;
+            padding-left: 20%;
+            justify-content: space-evenly;
+        }
+    }
+
+        /* li */
+        &--element {
+            padding: 0;
+            list-style-type: none;
+
+            @media screen and (min-width: $desktop) {
+                margin-left: 1%;
+            }
+        }
+    &__link {
+        display: block;
+        margin: 0;
+        padding: 5px 0 5px 0;
         color: $color-ink-dry;
+        font-size: $size-sixteen;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:link {
+            color: $color-ink-dry;
+        }
+
+        &:visited {
+            color: $color-ink-dry;
+        }
+
+        &__icone {
+            width: 18px;
+            margin-right: 5px;
+            font-size: $size-fifteen;
+        }
     }
-    &:visited{
-        color: $color-ink-dry;
-    }
-    &__icone{
-        width: 18px;
-        margin-right: 5px;
-        font-size: $size-fifteen;
-    }
-}
 }

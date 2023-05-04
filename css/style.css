@@ -740,7 +740,7 @@ body {
   color: #FFFFFF;
   background-color: #353535;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding-left: 25px;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -749,7 +749,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .footer {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: flex-end;
     padding-right: 5%;
     padding-bottom: 3%;
@@ -763,6 +763,7 @@ body {
 }
 .footer__list {
   font-size: 16px;
+  list-style-type: none;
   /* li */
 }
 @media screen and (min-width: 1024px) {
@@ -782,6 +783,27 @@ body {
     margin-left: 1%;
   }
 }
+.footer__link {
+  display: block;
+  margin: 0;
+  padding: 5px 0 5px 0;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer__link:link {
+  color: #FFFFFF;
+}
+.footer__link:visited {
+  color: #FFFFFF;
+}
+.footer__link__icone {
+  width: 18px;
+  margin-right: 5px;
+  font-size: 15px;
+}
 
 .mealFooter {
   height: 203px;
@@ -794,7 +816,7 @@ body {
   padding-top: 25px;
   /* title footer */
   /* ensemble de li */
-  /* zone cliquable de texte */
+  /* li */
 }
 @media screen and (min-width: 1024px) {
   .mealFooter {
@@ -812,7 +834,7 @@ body {
 }
 .mealFooter__list {
   font-size: 16px;
-  /* li */
+  list-style-type: none;
 }
 @media screen and (min-width: 1024px) {
   .mealFooter__list {
@@ -822,16 +844,16 @@ body {
     justify-content: space-evenly;
   }
 }
-.mealFooter__list--element {
+.mealFooter--element {
   padding: 0;
   list-style-type: none;
 }
 @media screen and (min-width: 1024px) {
-  .mealFooter__list--element {
+  .mealFooter--element {
     margin-left: 1%;
   }
 }
-.mealFooter .link {
+.mealFooter__link {
   display: block;
   margin: 0;
   padding: 5px 0 5px 0;
@@ -841,13 +863,13 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-.mealFooter .link:link {
+.mealFooter__link:link {
   color: #FFFFFF;
 }
-.mealFooter .link:visited {
+.mealFooter__link:visited {
   color: #FFFFFF;
 }
-.mealFooter .link__icone {
+.mealFooter__link__icone {
   width: 18px;
   margin-right: 5px;
   font-size: 15px;
