@@ -175,12 +175,13 @@ body {
   align-items: center;
   margin: 35px auto;
   border: none;
+  color: #FFFFFF;
   border-radius: 25px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(360.33deg, #9356DC -13.44%, #FF79DA 90.93%);
+  background: linear-gradient(352deg, #9356DC -12.56%, #FF79DA 101.93%);
 }
 .search--button:hover {
   color: #FFFFFF black;
@@ -323,7 +324,7 @@ body {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(360.33deg, #9356DC -13.44%, #FF79DA 90.93%);
+  background: linear-gradient(352deg, #9356DC -12.56%, #FF79DA 101.93%);
   color: #FFFFFF;
 }
 .meal--button:hover {
@@ -675,8 +676,9 @@ body {
   color: transparent;
   opacity: 0;
   left: 0px;
+  background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(360.33deg, #9356DC -13.44%, #FF79DA 90.93%);
+  background-image: linear-gradient(352deg, #9356DC -12.56%, #FF79DA 101.93%);
 }
 .heart__filter--full:hover {
   animation: heart-in 1s linear forwards;
@@ -718,8 +720,9 @@ body {
   position: absolute;
   color: transparent;
   opacity: 0;
+  background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(360.33deg, #9356DC -13.44%, #FF79DA 90.93%);
+  background-image: linear-gradient(352deg, #9356DC -12.56%, #FF79DA 101.93%);
 }
 .heartBanner__filter--full:hover {
   animation: heart-in 1s linear forwards;
@@ -991,7 +994,7 @@ body {
   position: absolute;
   z-index: 2;
   border-radius: 50%;
-  background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
+  background: linear-gradient(352deg, #9356DC -12.56%, #FF79DA 101.93%);
   animation: animate 1.5s linear 2;
 }
 .container__loader--filter:nth-child(1) {

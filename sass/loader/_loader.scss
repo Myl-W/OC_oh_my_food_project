@@ -28,7 +28,7 @@
             position: absolute;
             z-index: 2;
             border-radius: 50%;
-            background: linear-gradient(135deg, $color-primary, $color-tertiary-light, $color-secondary);
+            background: $color-linear-gradient;
             animation: animate 1.5s linear 2;
             &:nth-child(1){
                 filter: blur(0px);
