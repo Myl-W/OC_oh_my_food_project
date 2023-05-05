@@ -31,7 +31,7 @@
     width: 87%;
     position: relative;
     border-radius: 20px;
-    background: $color-bg-white;
+    background: $color-white;
     box-shadow: 0px 5px 10px 0px #b4b4b4;
     @media screen and (min-width: $desktop){
         width: 45%;
@@ -49,13 +49,13 @@
         left: 0;
         right: 0;
         border-radius: 20px;
-        background: $color-bg-white;
+        background: $color-white;
         text-decoration: none;
         &:link{
-            color: $color-ink;
+            color: $color-black;
         }
         &:visited{
-            color: $color-ink;
+            color: $color-black;
         } /* nouveauté */
         &--new{
             width: 80px;
@@ -65,11 +65,11 @@
             padding:6px 0;
             transform-origin: 10% 50%;
             border-radius: 2px;
-            background-color: $color-green-light;
+            background-color: $color-tertiary-light;
             text-align: center;
             font-size: 14px;
             font-weight: 500;
-            color: $color-green-dark;
+            color: $color-tertiary-dark;
         } /* image du restaurant */
         &__image{
             height: 175px;

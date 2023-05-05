@@ -1,24 +1,20 @@
 // colors
-$color-purple: #9356DC;
-$color-pink: #FF79DA;
-$color-green-light: #99E2D0;
-$color-green-dark:#008766;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary-light: #99E2D0;
+$color-tertiary-dark:#008766;
 $color-grey: #7E7E7E;
+$color-white: #FFFFFF;
 
-// color additionnelle bouton loadeur
-$color-load: #FFF;
-
-// color background
-$color-bg-local:#EAEAEA;
+// background colors
 $color-bg-banner: #F7F7F7;
-$color-bg-white: #FFFFFF;
+$color-bg-local:#EAEAEA;
 
 // color background footer
 $color-footer: #353535;
 
 // color police
-$color-ink: #000;
-$color-ink-dry: #FFFFFF;
+$color-black: #000;
 
 // taille police
 $size-fifteen: 15px;
@@ -30,6 +26,3 @@ $size-twenty-four: 24px;
 // media
 $tablet-iphone: 768px;
 $desktop: 1024px;
-
-// pourcentage
-$pourcent: 5%;

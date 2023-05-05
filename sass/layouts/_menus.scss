@@ -27,8 +27,8 @@
         font-weight: 400;
         font-family: 'Roboto', sans-serif;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(360.33deg, $color-purple -13.44%, $color-pink 90.93%);
-        color: $color-ink-dry;
+        background: linear-gradient(360.33deg, $color-primary -13.44%, $color-secondary 90.93%);
+        color: $color-white;
         &:hover{  
             opacity: 0.9;
             cursor: pointer;
@@ -141,7 +141,7 @@
             height: 3px;
             display: block;
             margin: 5px 0 10px 0;
-            background-color: $color-green-light;
+            background-color: $color-tertiary-light;
 
             @media screen and (min-width: $desktop) {
                 width: 85px;
@@ -171,7 +171,7 @@
     /* start/center décale la div validée */
     border-radius: 20px;
     box-shadow: 0px 5px 10px 0px #b4b4b4;
-    background-color: $color-bg-white;
+    background-color: $color-white;
     overflow: hidden;
     opacity: 0;
     animation: flou 0.6s linear 1s forwards;
@@ -233,7 +233,7 @@
 
         &--icone {
             font-size: 20px;
-            color: $color-ink-dry;
+            color: $color-white;
         }
     }
 

@@ -12,14 +12,14 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    background: $color-bg-white;
+    background: $color-white;
     animation: loader 2.8s linear forwards;   
     &__loader{
         width: 230px;
         height: 230px;
         position: relative;
         border-radius: 50%;
-        background: linear-gradient($color-purple, $color-green-light, $color-pink); 
+        background: linear-gradient($color-primary, $color-tertiary-light, $color-secondary); 
         animation: disparait 0.5s ease-in-out forwards 2.3s; 
             /* couches de blur */
         &--filter{   
@@ -28,7 +28,7 @@
             position: absolute;
             z-index: 2;
             border-radius: 50%;
-            background: linear-gradient(135deg, $color-purple, $color-green-light, $color-pink);
+            background: linear-gradient(135deg, $color-primary, $color-tertiary-light, $color-secondary);
             animation: animate 1.5s linear 2;
             &:nth-child(1){
                 filter: blur(0px);
@@ -49,7 +49,7 @@
                 bottom: 10px;
                 left: 10px;
                 right: 10px;
-                background: $color-bg-white;
+                background: $color-white;
                 filter: blur(10px);  
             }
             &:nth-child(6){
@@ -107,7 +107,7 @@
                 top: 34px;
                 left: 0px;
                 border-radius: 50%;;
-                background: $color-purple;
+                background: $color-primary;
                 filter: blur(15px);
                 transform: scale3d(1, 0.3, 1); 
             }
@@ -133,23 +133,23 @@
     filter: blur(2px);
     transform: scale(0.1);
     &:nth-child(1){  
-        background: radial-gradient($color-purple 50%, $color-load 0%);
+        background: radial-gradient($color-primary 50%, $color-white 0%);
         animation: point 0.8s linear 0s 3;  
     }
     &:nth-child(2){
-        background: radial-gradient($color-green-light 50%, $color-load 0%);
+        background: radial-gradient($color-tertiary-light 50%, $color-white 0%);
         animation: point 0.8s linear 0.1s 3;  
     }
     &:nth-child(3){
-        background: radial-gradient($color-pink 50%, $color-load 0%);
+        background: radial-gradient($color-secondary 50%, $color-white 0%);
         animation: point 0.8s linear 0.2s 3;  
     }
     &:nth-child(4){
-        background: radial-gradient($color-green-light 50%, $color-load 0%);
+        background: radial-gradient($color-tertiary-light 50%, $color-white 0%);
         animation: point 0.8s linear 0.3s 3;  
     }
     &:nth-child(5){
-        background: radial-gradient($color-purple 50%, $color-load 0%);
+        background: radial-gradient($color-primary 50%, $color-white 0%);
         animation: point 0.8s linear 0.4s 3;  
     }
 } 

@@ -3,7 +3,7 @@
 /* footer */
 .footer {
     height: 203px;
-    color: $color-ink-dry;
+    color: $color-white;
     background-color: $color-footer;
     display: flex;
     flex-direction: column;
@@ -53,18 +53,18 @@
         display: block;
         margin: 0;
         padding: 5px 0 5px 0;
-        color: $color-ink-dry;
+        color: $color-white;
         font-size: $size-sixteen;
         font-weight: 500;
         text-decoration: none;
         cursor: pointer;
 
         &:link {
-            color: $color-ink-dry;
+            color: $color-white;
         }
 
         &:visited {
-            color: $color-ink-dry;
+            color: $color-white;
         }
 
         &__icone {
@@ -78,7 +78,7 @@
 
 .mealFooter {
     height: 203px;
-    color: $color-ink-dry;
+    color: $color-white;
     background-color: $color-footer;
     display: flex;
     flex-direction: column;
@@ -127,18 +127,18 @@
         display: block;
         margin: 0;
         padding: 5px 0 5px 0;
-        color: $color-ink-dry;
+        color: $color-white;
         font-size: $size-sixteen;
         font-weight: 500;
         text-decoration: none;
         cursor: pointer;
 
         &:link {
-            color: $color-ink-dry;
+            color: $color-white;
         }
 
         &:visited {
-            color: $color-ink-dry;
+            color: $color-white;
         }
 
         &__icone {
