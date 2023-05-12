@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
+  max-width: 1440px;
 }
 
 /* sélection texte */
@@ -330,6 +331,7 @@ body {
   border: none;
   opacity: 0;
   animation: flou 1.3s linear forwards;
+  animation-delay: 0.5s;
   /* zone pour 4 choices */
   /* type starter */
 }
@@ -367,6 +369,7 @@ body {
   border: none;
   opacity: 0;
   animation: flou 1.3s linear forwards;
+  animation-delay: 1.5s;
   /* type de dinner */
 }
 @media screen and (min-width: 1024px) {
@@ -393,6 +396,7 @@ body {
   border: none;
   opacity: 0;
   animation: flou 1.3s linear forwards;
+  animation-delay: 2.5s;
   /* type des desserts */
 }
 @media screen and (min-width: 1024px) {
