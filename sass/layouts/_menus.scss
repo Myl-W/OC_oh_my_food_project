@@ -32,7 +32,6 @@
         &:hover{  
             opacity: 0.9;
             cursor: pointer;
-            animation: mou 0.6s ease-in-out 0.05s 1 forwards;
             box-shadow: 0px 5px 10px 0px #8e8e8e; 
         }
     }
@@ -45,6 +44,7 @@
         border: none;
         opacity: 0;
         animation: flou 1.3s linear forwards;
+        animation-delay: 0.5s;
 
         @media screen and (min-width: $desktop) {
             margin-bottom: 40px;
@@ -81,6 +81,7 @@
         border: none;
         opacity: 0;
         animation: flou 1.3s linear forwards;
+        animation-delay: 1.5s;
 
         @media screen and (min-width: $desktop) {
             margin-bottom: 40px;
@@ -107,6 +108,7 @@
         border: none;
         opacity: 0;
         animation: flou 1.3s linear forwards;
+        animation-delay: 2.5s;
 
         @media screen and (min-width: $desktop) {
             margin-bottom: 40px;
